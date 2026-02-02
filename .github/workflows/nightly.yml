@@ -1,4 +1,4 @@
-name: Nightly Build
+name: JoJo Nightly Build
 on:
   push:
     branches:

@@ -19,7 +19,6 @@ import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onStart
 import java.io.IOException
 import java.sql.SQLException
-import java.util.Locale
 
 object ProfileManager {
 
@@ -169,23 +168,11 @@ object ProfileManager {
                         domains = "set+dns:geosite-category-ads-all",
                     ),
                 )
-                val walledCountry = mutableListOf("cn:中国")
-                if (Locale.getDefault().country == Locale.US.country) {
-                    // English users
-                    walledCountry += "ir:Iran"
-                }
+                // JoJo: Iran-centric routing by default
+                val walledCountry = listOf("ir:Iran")
                 for (c in walledCountry) {
                     val country = c.substringBefore(":")
                     val displayCountry = c.substringAfter(":")
-                    if (country == "cn") createRule(
-                        RuleEntity(
-                            name = repo.getString(R.string.route_play_store, displayCountry),
-                            action = ACTION_ROUTE,
-                            domains = "set+dns:geosite-google-play",
-                            outbound = RuleEntity.OUTBOUND_PROXY,
-                        ),
-                        false,
-                    )
                     createRule(
                         RuleEntity(
                             name = repo.getString(R.string.route_bypass_domain, displayCountry),

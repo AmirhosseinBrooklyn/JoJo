@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">husi</string>
-    <string name="app_name_long">husi for Android</string>
-    <string name="app_desc">The universal proxy toolchain for Android, written in Kotlin.</string>
+    <string name="app_name">JoJo</string>
+    <string name="app_name_long">JoJo for Android</string>
+    <string name="app_desc">JoJo Proxy - The universal proxy toolchain for Android by Brooklyn.</string>
     <string name="project">Project</string>
     <string name="github">Source code</string>
     <string name="telegram">Telegram update channel</string>

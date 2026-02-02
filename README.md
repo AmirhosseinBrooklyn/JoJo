@@ -1,156 +1,98 @@
-<a href="https://apt.izzysoft.de/fdroid/index/apk/fr.husi/">
-    <img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png"
-    alt="Get it on IzzyOnDroid"
-    height="80">
-</a>
+# JoJo Proxy
 
-# Husi (虎兕)
+<img src="app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" alt="Icon" width="80" height="80"/>
 
-Husi is a non-professional and recreational proxy tool integration, aiming at promoting proxy customization.
+**JoJo** is a proxy client for Android forked from [husi](https://github.com/Flavor0fHard/husi), customized for Iran users.
 
-## 🛠️ Contribution
+## Features
 
-## 🧭 Guide
+- 🌍 **Iran-optimized routing**: Pre-configured Iran-centric routing rules using Chocolate4U/Iran-sing-box-rules
+- 🎨 **Azure Mirror theme**: Beautiful default theme
+- 🌐 **Persian localization**: Full Persian language support with VazirMatn font
+- 🚀 **Auto-connect**: Automatically connect on device startup
+- 📦 **Auto-update subscriptions**: Subscription groups auto-update by default
+- 🔒 Based on the powerful sing-box core
 
-[CONTRIBUTING](./CONTRIBUTING.md)
+## Building
 
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/xchacha20-poly1305/husi)
+### Prerequisites
 
-New here? You can use [DeepWiki](https://deepwiki.com/xchacha20-poly1305/husi) to known basic structure of husi and ask anything you want.
+- JDK 21
+- Android SDK
+- Android NDK (required for building native libraries)
+- Go (version specified in `go.mod`)
+- Make or equivalent build tools
 
-### 📚 Localization
+### Build Steps
 
-Is husi not in your language, or the translation is incorrect or incomplete? Get involved in the
-translations on our [Weblate](https://hosted.weblate.org/engage/husi/).
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/YourUsername/JoJo.git
+   cd JoJo
+   ```
 
-[![Translation status](https://hosted.weblate.org/widgets/husi/-/horizontal-auto.svg)](https://hosted.weblate.org/engage/husi/)
+2. Build native libraries:
+   ```bash
+   ./run lib core
+   ```
 
-### 🔨 Learn to Compilation
+3. Build APK:
+   ```bash
+   ./gradlew assembleRelease
+   ```
 
-In Linux, you can build husi reproducibly for release version.
+## Updating from Upstream (husi)
 
-For this, you should use the same version of JDK, NDK as below. And Go version should as same
-as [version.sh](./buildScript/init/version.sh).
+To merge updates from the upstream husi repository:
 
-#### 🧰 Get the Source Code
+```bash
+# Add upstream remote (if not already added)
+git remote add upstream https://github.com/Flavor0fHard/husi.git
 
-```shell
-git clone https://github.com/xchacha20-poly1305/husi.git --depth=1
-cd husi/
-./run lib source # Will help you to get submodules
+# Fetch upstream changes
+git fetch upstream
+
+# Merge upstream changes (resolve conflicts as needed)
+git merge upstream/main
+
+# Push updates
+git push origin main
 ```
 
-#### ⚖️ libcore
+## Customization Notes
 
-Environment:
+### Key Customization Files
 
-* These versions need to apply patch.
+| Feature | File Path |
+|---------|-----------|
+| Package Name | `husi.properties` |
+| App Branding | `app/src/main/res/values/strings.xml` |
+| Persian Strings | `app/src/main/res/values-fa/strings.xml` |
+| Default Theme | `app/src/main/java/.../database/DataStore.kt` (appTheme) |
+| Rule Provider | `app/src/main/java/.../database/DataStore.kt` (rulesProvider) |
+| Auto-Connect | `app/src/main/java/.../database/DataStore.kt` (persistAcrossReboot) |
+| Routing Rules | `app/src/main/java/.../database/ProfileManager.kt` |
+| Subscription Defaults | `app/src/main/java/.../database/SubscriptionBean.java` |
 
-  <details>
-    <summary>Unfold</summary>
+### Changing the App Icon
 
-  1.22.5: Apply [this patch](./libcore/patches/cgo_go1225.diff) to `${GOROOT}/src/runtime/cgocall.go`
+Replace icon files in:
+- `app/src/main/res/mipmap-mdpi/ic_launcher.png`
+- `app/src/main/res/mipmap-hdpi/ic_launcher.png`
+- `app/src/main/res/mipmap-xhdpi/ic_launcher.png`
+- `app/src/main/res/mipmap-xxhdpi/ic_launcher.png`
+- `app/src/main/res/mipmap-xxxhdpi/ic_launcher.png`
 
-  1.23.0-1.23.3: Apply [this patch](https://github.com/golang/go/commit/76a8409eb81eda553363783dcdd9d6224368ae0e.patch)
-  to`${GOROOT}`. `make patch_go1230`
+## License
 
-  1.23.4: Apply [this patch](https://github.com/golang/go/commit/59b7d40774b29bd1da1aa624f13233111aff4ad2.patch) to `$(GOROOT)`. `make patch_go1234`
+This project is licensed under the GNU General Public License v3.0 (GPL-3.0).
 
-  </details>
+Based on:
+- [husi](https://github.com/Flavor0fHard/husi) by Husi authors
+- [SagerNet](https://github.com/SagerNet/SagerNet) by nekohasekai
 
-* Openjdk-21 (Later may OK, too.)
+## Acknowledgments
 
-Run:
-
-```shell
-make libcore
-```
-
-This will generate `app/libs/libcore.aar`.
-
-If gomobile is not in the GOPATH, it will be automatically downloaded and compiled.
-
-If you don't want to build it, you can download then in [actions](https://github.com/xchacha20-poly1305/husi/actions)
-
-#### 🎀 Rename package name (optional)
-
-If you don't want to use the same package name, you can run `./run rename target_name`.
-
-#### 🎁 APK
-
-Environment:
-
-* jdk-21
-* ndk 29.0.14206865
-
-If the environment variables `$ANDROID_HOME` and `$ANDROID_NDK_HOME` are not set, you can run the script
-`buildScript/init/env_ndk.sh`:
-
-```shell
-echo "sdk.dir=${ANDROID_HOME}" > local.properties
-```
-
-Signing preparation (optional, it is recommended to sign after compilation): Replace `release.keystore` with your own
-keystore.
-
-```shell
-echo "KEYSTORE_PASS=" >> local.properties
-echo "ALIAS_NAME=" >> local.properties
-echo "ALIAS_PASS=" >> local.properties
-```
-
-Download geo resource files:
-
-```shell
-make assets
-```
-
-Compile the release version:
-
-```shell
-make apk
-```
-
-The APK file will be located in `app/build/outputs/apk`.
-
-#### 🌈 Plugins
-
-```shell
-make plugin PLUGIN=<Plugin name>
-```
-
-Plugin name list:
-
-* `hysteria2`
-* `juicity`
-* `naive` ( Deprecated. Build official repository directly, please. )
-* `mieru`
-* `shadowquic`
-
-## ☠️ End users
-
-[Wiki](https://github.com/xchacha20-poly1305/husi/wiki)
-
-## 📖 License
-
-[GPL-3.0 or later](./LICENSE)
-
-## 🤝 Acknowledgements
-
-- [SagerNet/sing-box](https://github.com/SagerNet/sing-box)
-- [shadowsocks/shadowsocks-android](https://github.com/shadowsocks/shadowsocks-android)
-- [SagerNet/SagerNet](https://github.com/SagerNet/SagerNet)
-- [XTLS/AnXray](https://github.com/XTLS/AnXray)
-- [MatsuriDayo/NekoBoxForAndroid](https://github.com/MatsuriDayo/NekoBoxForAndroid)
-- [SagerNet/sing-box-for-android](https://github.com/SagerNet/sing-box-for-android)
-- [AntiNeko/CatBoxForAndroid](https://github.com/AntiNeko/CatBoxForAndroid)
-- [MetaCubeX/ClashMetaForAndroid](https://github.com/MetaCubeX/ClashMetaForAndroid)
-- [dyhkwong/Exclave](https://github.com/dyhkwong/Exclave)
-- [chen08209/FlClash](https://github.com/chen08209/FlClash)
-- [RikkaApps/RikkaX](https://github.com/RikkaApps/RikkaX)
-
-Developing
-
-- [![](https://resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg)](https://www.jetbrains.com)
-
-  JetBrains' powerful IDE.
+- [sing-box](https://github.com/SagerNet/sing-box) - Core proxy engine
+- [Chocolate4U/Iran-sing-box-rules](https://github.com/Chocolate4U/Iran-sing-box-rules) - Iran rule assets
+- [VazirMatn](https://github.com/rastikerdar/vazirmatn) - Persian font

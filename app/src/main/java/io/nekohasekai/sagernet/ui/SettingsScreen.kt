@@ -181,8 +181,8 @@ fun SettingsScreen(
         .booleanFlow(Key.APPEND_HTTP_PROXY, false)
         .collectAsStateWithLifecycle(false)
     val rulesProviderState by DataStore.configurationStore
-        .intFlow(Key.RULES_PROVIDER, RuleProvider.OFFICIAL)
-        .collectAsStateWithLifecycle(RuleProvider.OFFICIAL)
+        .intFlow(Key.RULES_PROVIDER, RuleProvider.CHOCOLATE4U)
+        .collectAsStateWithLifecycle(RuleProvider.CHOCOLATE4U)
     val fakeDNSState by DataStore.configurationStore
         .booleanFlow(Key.ENABLE_FAKE_DNS, false)
         .collectAsStateWithLifecycle(false)
@@ -872,8 +872,8 @@ fun SettingsScreen(
                     }
 
                     val value by DataStore.configurationStore
-                        .intFlow(Key.RULES_PROVIDER, RuleProvider.OFFICIAL)
-                        .collectAsStateWithLifecycle(RuleProvider.OFFICIAL)
+                        .intFlow(Key.RULES_PROVIDER, RuleProvider.CHOCOLATE4U)
+                        .collectAsStateWithLifecycle(RuleProvider.CHOCOLATE4U)
 
                     ListPreference(
                         value = value,

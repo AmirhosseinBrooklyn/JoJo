@@ -270,7 +270,11 @@ localhost
 172.31.*
 192.168.*"""
 
-const val LICENSE = """Copyright (C) 2024-2026 by Husi authors <HystericalDragons@proton.me>
+const val LICENSE = """JoJo Proxy - A fork maintained by Brooklyn
+Copyright (C) 2026 by Brooklyn
+
+Based on Husi:
+Copyright (C) 2024-2026 by Husi authors <HystericalDragons@proton.me>
 Copyright (C) 2023 by AntiNeko authors <HystericalDragon@protomail.com>
 Copyright (C) 2021 by nekohasekai <contact-sagernet@sekai.icu>
 
@@ -290,8 +294,4 @@ See the GNU General Public License for more details.
 You should have received a copy of the
 GNU General Public License along with this program.
 If not, see <http://www.gnu.org/licenses/>.
-
-In addition, no derivative work may
-use the name or imply association with
-this application without prior consent.
 """

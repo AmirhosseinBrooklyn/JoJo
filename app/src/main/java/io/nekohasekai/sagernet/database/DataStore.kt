@@ -12,6 +12,7 @@ import io.nekohasekai.sagernet.SPEED_TEST_URL
 import io.nekohasekai.sagernet.SPEED_TEST_UPLOAD_URL
 import io.nekohasekai.sagernet.TrafficSortMode
 import io.nekohasekai.sagernet.TunImplementation
+import io.nekohasekai.sagernet.RuleProvider
 import io.nekohasekai.sagernet.bg.BaseService
 import io.nekohasekai.sagernet.bg.VpnService
 import io.nekohasekai.sagernet.database.preference.DataStorePreferenceDataStore
@@ -92,7 +93,7 @@ object DataStore {
     var acceptedLicense by configurationStore.boolean(Key.ACCEPTED_LICENSE)
 
     var isExpert by configurationStore.boolean(Key.APP_EXPERT)
-    var appTheme by configurationStore.int(Key.APP_THEME)
+    var appTheme by configurationStore.int(Key.APP_THEME) { 8 } // Azure Mirror (LIGHT_BLUE)
     var nightTheme by configurationStore.int(Key.NIGHT_THEME)
     var serviceMode by configurationStore.string(Key.SERVICE_MODE) { Key.MODE_VPN }
     var memoryLimit by configurationStore.boolean(Key.MEMORY_LIMIT) { false }
@@ -136,7 +137,7 @@ object DataStore {
     var dnsHosts by configurationStore.string(Key.DNS_HOSTS)
 
     var securityAdvisory by configurationStore.boolean(Key.SECURITY_ADVISORY) { true }
-    var rulesProvider by configurationStore.int(Key.RULES_PROVIDER)
+    var rulesProvider by configurationStore.int(Key.RULES_PROVIDER) { RuleProvider.CHOCOLATE4U }
     var customRuleProvider by configurationStore.string(Key.CUSTOM_RULE_PROVIDER)
     var logLevel by configurationStore.int(Key.LOG_LEVEL) { 3 /* WARN */ }
     var logMaxLine by configurationStore.int(Key.LOG_MAX_LINE) { 1024 }
@@ -179,7 +180,7 @@ object DataStore {
     var packages by configurationStore.stringSet(Key.PACKAGES)
     var showDirectSpeed by configurationStore.boolean(Key.SHOW_DIRECT_SPEED) { true }
 
-    var persistAcrossReboot by configurationStore.boolean(Key.PERSIST_ACROSS_REBOOT) { false }
+    var persistAcrossReboot by configurationStore.boolean(Key.PERSIST_ACROSS_REBOOT) { true }
 
     var appendHttpProxy by configurationStore.boolean(Key.APPEND_HTTP_PROXY)
     var httpProxyBypass by configurationStore.string(Key.HTTP_PROXY_BYPASS) { DEFAULT_HTTP_BYPASS }
