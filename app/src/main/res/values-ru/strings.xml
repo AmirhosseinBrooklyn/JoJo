@@ -100,7 +100,7 @@
     <string name="oss_licenses">Лицензии с открытым исходным кодом</string>
     <string name="telegram">Канал обновлений в Telegram</string>
     <string name="github">Исходный код</string>
-    <string name="project">Проект</string>
+    <string name="project">JoJo</string>
     <string name="app_desc">Современный, бесплатный и безопасный клиент для Android на основе интерфейса SagerNet, работающий на ядре sing-box, оптимизированный для пользователей из Ирана
     </string>
     <plurals name="added">
@@ -447,7 +447,7 @@
     <string name="update_all_subscription">Обновить все подписки</string>
     <string name="connection_test_delete_unavailable">Удалить недоступные</string>
     <string name="move">Переместить</string>
-    <string name="app_name_long">husi для Андроид</string>
+    <string name="app_name_long">JoJo</string>
     <string name="assets_update">Обновить геоданные</string>
     <string name="log_level">Тип журнала</string>
     <string name="landing_proxy">Конечный прокси</string>
@@ -490,7 +490,7 @@
     <string name="nat_result_hint">Провести проверку NAT</string>
     <string name="acquire_wake_lock">Использовать WakeLock</string>
     <string name="resolve_server">Разрешить адрес сервера в соответствии с политикой IPv6</string>
-    <string name="app_name">husi</string>
+    <string name="app_name">JoJo</string>
     <string name="tuic_congestion_controller">Контроллер перегруженности</string>
     <string name="save">Сохранить</string>
     <string name="ech_config">Конфигурация ECH</string>

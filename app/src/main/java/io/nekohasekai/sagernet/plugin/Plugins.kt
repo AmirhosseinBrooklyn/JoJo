@@ -9,7 +9,7 @@ import io.nekohasekai.sagernet.repository.repo
 import io.nekohasekai.sagernet.utils.PackageCache
 
 object Plugins {
-    const val AUTHORITIES_PREFIX_HUSI_EXE = "fr.husi.plugin."
+    const val AUTHORITIES_PREFIX_JOJO_EXE = "io.jojo.plugin."
     const val AUTHORITIES_PREFIX_SEKAI_EXE =
         "io.nekohasekai.sagernet.plugin." // https://github.com/SagerNet/SagerNet
     const val AUTHORITIES_PREFIX_NEKO_EXE =
@@ -25,7 +25,7 @@ object Plugins {
     val allowedSet = HashSet<String>(DataStore.customPluginPrefix.split("\n").filter {
         it.isNotBlank() && it != "."
     }).apply {
-        add(AUTHORITIES_PREFIX_HUSI_EXE)
+        add(AUTHORITIES_PREFIX_JOJO_EXE)
         add(AUTHORITIES_PREFIX_SEKAI_EXE)
         add(AUTHORITIES_PREFIX_NEKO_EXE)
         add(AUTHORITIES_PREFIX_DYHKWONG)
@@ -41,12 +41,12 @@ object Plugins {
     }
 
     fun preferExePrefix(): String {
-        return AUTHORITIES_PREFIX_HUSI_EXE
+        return AUTHORITIES_PREFIX_JOJO_EXE
     }
 
     fun displayExeProvider(pkgName: String): String {
         return when {
-            pkgName.startsWith(AUTHORITIES_PREFIX_HUSI_EXE) -> {
+            pkgName.startsWith(AUTHORITIES_PREFIX_JOJO_EXE) -> {
                 repo.getString(R.string.app_name)
             }
 
@@ -61,7 +61,7 @@ object Plugins {
         if (pluginId.isBlank()) return null
         getPluginExternal(pluginId)?.let { return it }
         // internal so
-        return ProviderInfo().apply { authority = AUTHORITIES_PREFIX_HUSI_EXE }
+        return ProviderInfo().apply { authority = AUTHORITIES_PREFIX_JOJO_EXE }
     }
 
     fun getPluginExternal(pluginId: String): ProviderInfo? {

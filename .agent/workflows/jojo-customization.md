@@ -6,9 +6,9 @@ description: How to customize and update the JoJo proxy client fork
 
 ## Rebranding
 
-1. Update package name in `husi.properties`:
+1. Update package name in `jojo.properties`:
    ```properties
-   PACKAGE_NAME=io.jojo.proxy
+   PACKAGE_NAME=io.jojo.app
    ```
 
 2. Update app name strings in:
@@ -57,7 +57,7 @@ Default routing rules are created in `app/src/main/java/io/nekohasekai/sagernet/
    ```
 
 3. Resolve any conflicts, especially in:
-   - `husi.properties` (package name)
+   - `jojo.properties` (package name)
    - `strings.xml` files (app name)
    - `DataStore.kt` (default settings)
    - `ProfileManager.kt` (routing rules)

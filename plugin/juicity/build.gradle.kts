@@ -4,9 +4,9 @@ plugins {
 
 android {
     defaultConfig {
-        applicationId = "fr.husi.plugin.juicity"
+        applicationId = "io.jojo.plugin.juicity"
     }
-    namespace = "fr.husi.plugin.juicity"
+    namespace = "io.jojo.plugin.juicity"
 }
 
 setupPlugin("juicity")

@@ -10,7 +10,7 @@ class TempRepository(
 ) : SagerRepository(context, isMainProcess, isBgProcess) {
 
     private val tempRoot: File by lazy {
-        createTempDir("husi-temp-repo")
+        createTempDir("jojo-temp-repo")
     }
 
     override val cacheDir: File by lazy {

@@ -17,7 +17,7 @@
  *                                                                            *
  ******************************************************************************/
 
-package fr.husi.plugin.hysteria2
+package io.jojo.plugin.hysteria2
 
 import android.net.Uri
 import android.os.ParcelFileDescriptor

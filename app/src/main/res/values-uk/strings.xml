@@ -79,7 +79,7 @@
     <string name="oss_licenses">Ліцензії з відкритим кодом</string>
     <string name="telegram">Канал оновлення Telegram</string>
     <string name="github">Вихідний код</string>
-    <string name="project">Проєкт</string>
+    <string name="project">JoJo</string>
     <string name="app_desc">Універсальний набір інструментів проксі для Android, написаний на
         Kotlin.
     </string>
@@ -138,8 +138,8 @@
     <string name="nat_stun_server_hint">STUN сервер</string>
     <string name="share_subscription">Поділитися підпискою</string>
     <string name="insecure_warn">Порадни з безпеки</string>
-    <string name="app_name">husi</string>
-    <string name="app_name_long">husi для Android</string>
+    <string name="app_name">JoJo</string>
+    <string name="app_name_long">JoJo</string>
     <string name="action_open">Відкрити</string>
     <string name="update_all_subscription">Оновити всі підписки</string>
     <string name="route_proxy">Проксі</string>

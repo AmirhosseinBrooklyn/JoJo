@@ -17,7 +17,7 @@
  *                                                                            *
  ******************************************************************************/
 
-package fr.husi.plugin.naive
+package io.jojo.plugin.naive
 
 import android.net.Uri
 import android.os.ParcelFileDescriptor

@@ -32,7 +32,7 @@
     <string name="themes_teal">溫潤而澤</string>
     <string name="themes_yellow">其道大光</string>
     <string name="document">文件</string>
-    <string name="project">項目</string>
+    <string name="project">JoJo</string>
     <string name="oss_licenses">開放源碼授權條款</string>
     <string name="menu_group">分組</string>
     <string name="group_name">分組名稱</string>
@@ -120,7 +120,7 @@
     <string name="connection_test_icmp_ping_unavailable">ICMPing 不可用</string>
     <string name="sekai">世界</string>
     <string name="app_name">虎兕</string>
-    <string name="app_name_long">匪兕匪虎 率彼曠野</string>
+    <string name="app_name_long">JoJo</string>
     <string name="language">語言</string>
     <string name="language_system_default">系統預設</string>
     <string name="quic">QUIC</string>

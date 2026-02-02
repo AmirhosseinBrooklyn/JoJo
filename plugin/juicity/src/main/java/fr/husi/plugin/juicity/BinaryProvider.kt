@@ -17,7 +17,7 @@
  *                                                                            *
  ******************************************************************************/
 
-package fr.husi.plugin.juicity
+package io.jojo.plugin.juicity
 
 import android.net.Uri
 import android.os.ParcelFileDescriptor

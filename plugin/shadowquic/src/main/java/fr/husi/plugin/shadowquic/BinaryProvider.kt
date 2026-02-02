@@ -17,7 +17,7 @@
  *                                                                            *
  ******************************************************************************/
 
-package fr.husi.plugin.shadowquic
+package io.jojo.plugin.shadowquic
 
 import android.net.Uri
 import android.os.ParcelFileDescriptor

@@ -4,9 +4,9 @@ plugins {
 
 android {
     defaultConfig {
-        applicationId = "fr.husi.plugin.shadowquic"
+        applicationId = "io.jojo.plugin.shadowquic"
     }
-    namespace = "fr.husi.plugin.shadowquic"
+    namespace = "io.jojo.plugin.shadowquic"
 }
 
 setupPlugin("shadowquic")

@@ -65,7 +65,7 @@ git push origin main
 
 | Feature | File Path |
 |---------|-----------|
-| Package Name | `husi.properties` |
+| Package Name | `jojo.properties` |
 | App Branding | `app/src/main/res/values/strings.xml` |
 | Persian Strings | `app/src/main/res/values-fa/strings.xml` |
 | Default Theme | `app/src/main/java/.../database/DataStore.kt` (appTheme) |

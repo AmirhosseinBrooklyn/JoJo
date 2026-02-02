@@ -4,9 +4,9 @@ plugins {
 
 android {
     defaultConfig {
-        applicationId = "fr.husi.plugin.hysteria2"
+        applicationId = "io.jojo.plugin.hysteria2"
     }
-    namespace = "fr.husi.plugin.hysteria2"
+    namespace = "io.jojo.plugin.hysteria2"
 }
 
 setupPlugin("hysteria2")

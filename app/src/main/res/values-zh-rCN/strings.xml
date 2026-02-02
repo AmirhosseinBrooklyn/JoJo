@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">虎兕</string>
-    <string name="app_name_long">匪兕匪虎 率彼旷野</string>
+    <string name="app_name_long">JoJo</string>
     <string name="app_desc">基于 SagerNet UI 的现代、免费且安全的 Android 客户端，由 sing-box 核心驱动，专为伊朗用户优化</string>
-    <string name="project">项目</string>
+    <string name="project">JoJo</string>
     <string name="github">源代码</string>
     <string name="telegram">Telegram 更新频道</string>
     <string name="oss_licenses">开放源代码协议</string>

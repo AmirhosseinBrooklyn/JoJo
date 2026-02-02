@@ -2,7 +2,7 @@
 <resources>
     <string name="app_desc">Un cliente Android moderno, gratuito y seguro basado en la interfaz de usuario de SagerNet, impulsado por el núcleo sing-box, optimizado para usuarios de Irán
     </string>
-    <string name="project">Proyecto</string>
+    <string name="project">JoJo</string>
     <string name="github">Código fuente</string>
     <string name="telegram">Canal de actualización de Telegram</string>
     <string name="oss_licenses">Licencias de código abierto</string>
@@ -431,7 +431,7 @@
     <string name="action_switch">Cambiar</string>
     <string name="connection_test_delete_unavailable">Borrar los no disponibles</string>
     <string name="neko_plugin_internal_error">%s error interno</string>
-    <string name="app_name_long">husi para Android</string>
+    <string name="app_name_long">JoJo</string>
     <string name="update_all_subscription">Actualizar suscripciones</string>
     <string name="route_opt_block_quic">Bloquear QUIC</string>
     <string name="subscription_expire">Expira: %s</string>
@@ -444,7 +444,7 @@
     <string name="tuic_udp_relay_mode">Modo de retransmisión UDP</string>
     <string name="tuic_congestion_controller">Controlador de congestión</string>
     <string name="hop_interval">Intervalo de salto de puerto (segundos)</string>
-    <string name="app_name">husi</string>
+    <string name="app_name">JoJo</string>
     <string name="menu_dashboard">Panel</string>
     <string name="is_outbound_only">El conjunto JSON es saliente</string>
     <string name="save">Guardar</string>

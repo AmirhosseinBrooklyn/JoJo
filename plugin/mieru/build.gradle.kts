@@ -4,9 +4,9 @@ plugins {
 
 android {
     defaultConfig {
-        applicationId = "fr.husi.plugin.mieru"
+        applicationId = "io.jojo.plugin.mieru"
     }
-    namespace = "fr.husi.plugin.mieru"
+    namespace = "io.jojo.plugin.mieru"
 }
 
 setupPlugin("mieru")

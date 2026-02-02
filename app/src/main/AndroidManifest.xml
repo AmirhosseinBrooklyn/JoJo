@@ -113,7 +113,7 @@
 
                 <data
                     android:host="subscription"
-                    android:scheme="husi" />
+                    android:scheme="jojo" />
 
             </intent-filter>
 
@@ -134,7 +134,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <data android:scheme="husi" />
+                <data android:scheme="jojo" />
                 <data android:scheme="ss" />
                 <data android:scheme="socks" />
                 <data android:scheme="socks4" />

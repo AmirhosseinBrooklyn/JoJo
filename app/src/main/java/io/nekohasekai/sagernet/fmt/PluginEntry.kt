@@ -12,7 +12,7 @@ enum class PluginEntry(
     MieruProxy(
         "mieru-plugin",
         repo.getString(R.string.action_mieru),
-        "fr.husi.plugin.mieru",
+        "io.jojo.plugin.mieru",
         DownloadSource(
             fdroid = false,
             downloadLink = "https://github.com/AmirhosseinBrooklyn/JoJo/releases?q=plugin-mieru",
@@ -21,7 +21,7 @@ enum class PluginEntry(
     NaiveProxy(
         "naive-plugin",
         repo.getString(R.string.action_naive),
-        "fr.husi.plugin.naive",
+        "io.jojo.plugin.naive",
         DownloadSource(
             fdroid = false,
             downloadLink = "https://github.com/klzgrad/naiveproxy/releases",
@@ -39,7 +39,7 @@ enum class PluginEntry(
     Hysteria2(
         "hysteria2-plugin",
         repo.getString(R.string.action_hysteria) + "2",
-        "fr.husi.plugin.hysteria2",
+        "io.jojo.plugin.hysteria2",
         DownloadSource(
             fdroid = false,
             downloadLink = "https://github.com/AmirhosseinBrooklyn/JoJo/releases?q=plugin-hysteria2",
@@ -48,7 +48,7 @@ enum class PluginEntry(
     Juicity(
         "juicity-plugin",
         repo.getString(R.string.action_juicity),
-        "fr.husi.plugin.juicity",
+        "io.jojo.plugin.juicity",
         DownloadSource(
             fdroid = false,
             downloadLink = "https://github.com/AmirhosseinBrooklyn/JoJo/releases?q=plugin-juicity",
@@ -57,7 +57,7 @@ enum class PluginEntry(
     ShadowQuic(
         "shadowquic-plugin",
         repo.getString(R.string.action_shadowquic),
-        "fr.husi.plugin.shadowquic",
+        "io.jojo.plugin.shadowquic",
         DownloadSource(
             fdroid = false,
             downloadLink = "https://github.com/AmirhosseinBrooklyn/JoJo/releases?q=plugin-shadowquic",

@@ -17,7 +17,7 @@
  *                                                                            *
  ******************************************************************************/
 
-package fr.husi.plugin.mieru
+package io.jojo.plugin.mieru
 
 import android.net.Uri
 import android.os.ParcelFileDescriptor

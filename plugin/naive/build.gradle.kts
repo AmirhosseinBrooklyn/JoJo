@@ -4,9 +4,9 @@ plugins {
 
 android {
     defaultConfig {
-        applicationId = "fr.husi.plugin.naive"
+        applicationId = "io.jojo.plugin.naive"
     }
-    namespace = "fr.husi.plugin.naive"
+    namespace = "io.jojo.plugin.naive"
 }
 
 setupPlugin("naive")
