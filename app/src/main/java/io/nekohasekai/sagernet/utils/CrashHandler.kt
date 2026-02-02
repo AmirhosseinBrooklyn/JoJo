@@ -37,7 +37,7 @@ object CrashHandler : Thread.UncaughtExceptionHandler {
         ProcessPhoenix.triggerRebirth(
             repo.context,
             Intent(repo.context, BlankActivity::class.java)
-                .putExtra(BlankActivity.EXTRA_LOG_TITLE, "husi_crash"),
+                .putExtra(BlankActivity.EXTRA_LOG_TITLE, "jojo_crash"),
         )
     }
 
@@ -63,7 +63,7 @@ object CrashHandler : Thread.UncaughtExceptionHandler {
 
     fun buildReportHeader(): String {
         var report = ""
-        report += "husi ${BuildConfig.VERSION_NAME} (${BuildConfig.VERSION_CODE}) ${BuildConfig.FLAVOR.uppercase()}\n"
+        report += "JoJo ${BuildConfig.VERSION_NAME} (${BuildConfig.VERSION_CODE}) ${BuildConfig.FLAVOR.uppercase()}\n"
         report += "Date: ${getCurrentMilliSecondUTCTimeStamp()}\n\n"
         report += "OS_VERSION: ${getSystemPropertyWithAndroidAPI("os.version")}\n"
         report += "SDK_INT: ${Build.VERSION.SDK_INT}\n"

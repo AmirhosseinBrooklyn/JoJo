@@ -290,7 +290,7 @@ fun ConfigurationScreen(
                             textFieldState = searchTextFieldState,
                             searchBarState = searchBarState,
                             onSearch = { focusManager.clearFocus() },
-                            placeholder = { Text(stringResource(android.R.string.search_go)) },
+                            placeholder = { Text(stringResource(R.string.search)) },
                             leadingIcon = {
                                 Icon(
                                     ImageVector.vectorResource(R.drawable.search),

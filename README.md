@@ -1,4 +1,4 @@
-# JoJo Proxy
+# JoJo
 
 <img src="app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" alt="Icon" width="80" height="80"/>
 

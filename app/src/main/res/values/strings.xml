@@ -186,6 +186,7 @@
     <string name="proxied_apps_summary">Configure VPN mode for selected apps</string>
     <string name="on">On</string>
     <string name="off">Off</string>
+    <string name="search">Search…</string>
     <string name="search_apps">Search…</string>
     <string name="scanning">Scanning…</string>
     <string name="invert_selections">Invert selections</string>

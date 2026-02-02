@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_desc">یک کلاینت اندروید مدرن، رایگان و امن مبتنی بر پوستهٔ SagerNet با هستهٔ sing-box و بهینهشده برای کاربران ایرانی</string>
-    <string name="project">پروژه</string>
+    <string name="project">جوجو</string>
     <string name="github">کد منبع</string>
     <string name="telegram">کانال به‌روزرسانی تلگرام</string>
     <string name="oss_licenses">مجوزهای منبع باز</string>
@@ -151,6 +151,7 @@
     <string name="proxied_apps_summary">حالت VPN را برای برنامه های انتخابی کانفیگ کنید</string>
     <string name="on">روشن</string>
     <string name="off">خاموش</string>
+    <string name="search">جستجو…</string>
     <string name="search_apps">جستجو…</string>
     <string name="scanning">اسکن کردن…</string>
     <string name="invert_selections">معکوس کردن انتخاب ها</string>
