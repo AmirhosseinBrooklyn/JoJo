@@ -48,6 +48,12 @@ class SagerNet : Application(),
     override fun onCreate() {
         super.onCreate()
 
+        if (androidx.appcompat.app.AppCompatDelegate.getApplicationLocales().isEmpty) {
+             androidx.appcompat.app.AppCompatDelegate.setApplicationLocales(
+                 androidx.core.os.LocaleListCompat.forLanguageTags("fa")
+             )
+        }
+
         System.setProperty(DEBUG_PROPERTY_NAME, DEBUG_PROPERTY_VALUE_ON)
         Thread.setDefaultUncaughtExceptionHandler(CrashHandler)
 

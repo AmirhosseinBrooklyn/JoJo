@@ -270,7 +270,7 @@ fun RouteScreen(
                             modifier = Modifier
                                 .fillMaxWidth()
                                 .clickable {
-                                    uriHandler.openUri("https://github.com/xchacha20-poly1305/husi/wiki/Route")
+                                    uriHandler.openUri("https://urls.st/document")
                                 },
                             color = MaterialTheme.colorScheme.onSurface,
                             fontWeight = FontWeight.Bold,

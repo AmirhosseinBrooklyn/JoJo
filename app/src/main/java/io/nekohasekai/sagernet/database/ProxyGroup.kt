@@ -17,9 +17,9 @@ data class ProxyGroup(
     var userOrder: Long = 0L,
     var ungrouped: Boolean = false,
     var name: String? = null,
-    var type: Int = GroupType.BASIC,
+    var type: Int = GroupType.SUBSCRIPTION,
     var subscription: SubscriptionBean? = null,
-    var order: Int = GroupOrder.ORIGIN,
+    var order: Int = GroupOrder.BY_DELAY,
     var frontProxy: Long = -1L,
     var landingProxy: Long = -1L,
 ) : Serializable() {

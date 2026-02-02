@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">JoJo</string>
-    <string name="app_name_long">JoJo for Android</string>
-    <string name="app_desc">JoJo Proxy - The universal proxy toolchain for Android by Brooklyn.</string>
-    <string name="project">Project</string>
+    <string name="app_name_long">JoJo</string>
+    <string name="app_desc">A modern, free, and secure Android client based on the SagerNet UI, powered by the sing-box core, optimized for Iran users</string>
+    <string name="project">JoJo</string>
     <string name="github">Source code</string>
     <string name="telegram">Telegram update channel</string>
     <string name="oss_licenses">Open source licenses</string>
@@ -320,6 +320,7 @@
     <string name="apply">Apply</string>
     <string name="need_reload">Reload proxy service to apply changes</string>
     <string name="license">License</string>
+    <string name="license_content">JoJo | A modern, free, and secure Android client based on the SagerNet UI, powered by the sing-box core, optimized for Iran users\n\nDeveloped by Brooklyn\n\nWith sincere thanks and appreciation to Victoria and the Husi team\n\nThis program is free software and a fork of the Husi client.\nAll copyrights of the original work remain with their respective authors and this project is distributed under the same license.\n\nYou may use, redistribute and/or modify this program under the terms of the GNU General Public License (GPL) version 3 or any later version published by the Free Software Foundation.\n\nThis program is distributed in the hope that it will be useful, especially for Iran users, but WITHOUT ANY WARRANTY;\nwithout even the implied warranty of MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, SECURITY, or NON-MISUSE.\n\nFor more details see http://www.gnu.org/licenses.</string>
     <string name="route_warn">Make sure you have read the documentation before adding custom rules,
         otherwise you may not be able to connect to the Internet.
     </string>
@@ -557,7 +558,7 @@
     <string name="vpn_app_type_other">Other</string>
     <string name="vpn_core_type_unknown">Unknown</string>
     <string name="assets_update">Update geo assets</string>
-    <string name="sekai">nekohasekai</string>
+    <string name="sekai">Our Website</string>
     <string name="test_timeout">Test timeout (ms)</string>
     <string name="mux_preference">Multiplex Settings</string>
     <string name="enable_brutal">Enable TCP Brutal congestion controller</string>

@@ -15,7 +15,7 @@ enum class PluginEntry(
         "fr.husi.plugin.mieru",
         DownloadSource(
             fdroid = false,
-            downloadLink = "https://github.com/xchacha20-poly1305/husi/releases?q=plugin-mieru",
+            downloadLink = "https://github.com/AmirhosseinBrooklyn/JoJo/releases?q=plugin-mieru",
         ),
     ),
     NaiveProxy(
@@ -42,7 +42,7 @@ enum class PluginEntry(
         "fr.husi.plugin.hysteria2",
         DownloadSource(
             fdroid = false,
-            downloadLink = "https://github.com/xchacha20-poly1305/husi/releases?q=plugin-hysteria2",
+            downloadLink = "https://github.com/AmirhosseinBrooklyn/JoJo/releases?q=plugin-hysteria2",
         ),
     ),
     Juicity(
@@ -51,7 +51,7 @@ enum class PluginEntry(
         "fr.husi.plugin.juicity",
         DownloadSource(
             fdroid = false,
-            downloadLink = "https://github.com/xchacha20-poly1305/husi/releases?q=plugin-juicity",
+            downloadLink = "https://github.com/AmirhosseinBrooklyn/JoJo/releases?q=plugin-juicity",
         ),
     ),
     ShadowQuic(
@@ -60,14 +60,14 @@ enum class PluginEntry(
         "fr.husi.plugin.shadowquic",
         DownloadSource(
             fdroid = false,
-            downloadLink = "https://github.com/xchacha20-poly1305/husi/releases?q=plugin-shadowquic",
+            downloadLink = "https://github.com/AmirhosseinBrooklyn/JoJo/releases?q=plugin-shadowquic",
         ),
     )
     ;
 
     data class DownloadSource(
         val fdroid: Boolean = true,
-        val downloadLink: String = "https://github.com/xchacha20-poly1305/husi/releases",
+        val downloadLink: String = "https://github.com/AmirhosseinBrooklyn/JoJo/releases",
     )
 
     companion object {

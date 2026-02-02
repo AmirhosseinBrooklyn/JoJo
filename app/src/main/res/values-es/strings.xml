@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_desc">La cadena de herramientas proxy universal para Android, escrita en
-        Kotlin.
+    <string name="app_desc">Un cliente Android moderno, gratuito y seguro basado en la interfaz de usuario de SagerNet, impulsado por el núcleo sing-box, optimizado para usuarios de Irán
     </string>
     <string name="project">Proyecto</string>
     <string name="github">Código fuente</string>

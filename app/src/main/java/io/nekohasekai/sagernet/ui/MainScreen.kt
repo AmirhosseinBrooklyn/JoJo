@@ -251,7 +251,7 @@ fun MainScreen(
                         scope.launch {
                             drawerState.close()
                         }
-                        uriHandler.openUri("https://github.com/xchacha20-poly1305/husi/wiki")
+                        uriHandler.openUri("https://urls.st/document")
                     },
                     modifier = modifier.padding(NavigationDrawerItemDefaults.ItemPadding),
                     icon = {

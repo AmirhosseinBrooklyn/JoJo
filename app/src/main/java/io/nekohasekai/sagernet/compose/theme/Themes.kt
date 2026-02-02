@@ -21,6 +21,10 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import io.nekohasekai.sagernet.Key
 import io.nekohasekai.sagernet.R
 import io.nekohasekai.sagernet.database.DataStore
+import androidx.compose.ui.platform.LocalConfiguration
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.material3.Typography
 
 const val RED = 1
 const val PINK_SSR = 2
@@ -81,9 +85,32 @@ fun Resources.isDarkMode(mode: Int) = when (mode) {
     else -> (configuration.uiMode and AndroidUiModes.UI_MODE_NIGHT_MASK) == AndroidUiModes.UI_MODE_NIGHT_YES
 }
 
+
+val VazirMatnFontFamily = FontFamily(Font(R.font.vazirmatn))
+
+val defaultTypography = Typography()
+val PersianTypography = Typography(
+    displayLarge = defaultTypography.displayLarge.copy(fontFamily = VazirMatnFontFamily),
+    displayMedium = defaultTypography.displayMedium.copy(fontFamily = VazirMatnFontFamily),
+    displaySmall = defaultTypography.displaySmall.copy(fontFamily = VazirMatnFontFamily),
+    headlineLarge = defaultTypography.headlineLarge.copy(fontFamily = VazirMatnFontFamily),
+    headlineMedium = defaultTypography.headlineMedium.copy(fontFamily = VazirMatnFontFamily),
+    headlineSmall = defaultTypography.headlineSmall.copy(fontFamily = VazirMatnFontFamily),
+    titleLarge = defaultTypography.titleLarge.copy(fontFamily = VazirMatnFontFamily),
+    titleMedium = defaultTypography.titleMedium.copy(fontFamily = VazirMatnFontFamily),
+    titleSmall = defaultTypography.titleSmall.copy(fontFamily = VazirMatnFontFamily),
+    bodyLarge = defaultTypography.bodyLarge.copy(fontFamily = VazirMatnFontFamily),
+    bodyMedium = defaultTypography.bodyMedium.copy(fontFamily = VazirMatnFontFamily),
+    bodySmall = defaultTypography.bodySmall.copy(fontFamily = VazirMatnFontFamily),
+    labelLarge = defaultTypography.labelLarge.copy(fontFamily = VazirMatnFontFamily),
+    labelMedium = defaultTypography.labelMedium.copy(fontFamily = VazirMatnFontFamily),
+    labelSmall = defaultTypography.labelSmall.copy(fontFamily = VazirMatnFontFamily)
+)
+
 @Composable
 fun AppTheme(content: @Composable () -> Unit) {
     val resources = LocalResources.current
+    val configuration = LocalConfiguration.current
     val initialNightTheme = remember { DataStore.nightTheme }
     val initialAppTheme = remember { DataStore.appTheme }
     val nightModeValue by DataStore.configurationStore
@@ -143,6 +170,7 @@ fun AppTheme(content: @Composable () -> Unit) {
 
     MaterialTheme(
         colorScheme = colorScheme,
+        typography = if (configuration.locales[0].language == "fa") PersianTypography else Typography(),
         content = content,
     )
 }

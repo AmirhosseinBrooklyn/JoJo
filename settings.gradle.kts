@@ -20,4 +20,4 @@ include(":app")
 include(":library:DragDropSwipeLazyColumn:drag-drop-swipe-lazycolumn")
 include(":library:compose-code-editor:codeeditor")
 
-rootProject.name = "husi"
+rootProject.name = "JoJo"

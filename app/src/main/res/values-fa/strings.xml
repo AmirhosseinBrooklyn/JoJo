@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_desc">زنجیره ابزار پروکسی جهانی برای اندروید، نوشته شده در کاتلین.</string>
+    <string name="app_desc">یک کلاینت اندروید مدرن، رایگان و امن مبتنی بر پوستهٔ SagerNet با هستهٔ sing-box و بهینهشده برای کاربران ایرانی</string>
     <string name="project">پروژه</string>
     <string name="github">کد منبع</string>
     <string name="telegram">کانال به‌روزرسانی تلگرام</string>
@@ -8,7 +8,7 @@
     <string name="app_version">نسخه</string>
     <string name="version_x">نسخه (%s)</string>
     <string name="logcat">صادر کردن اطلاعات اشکال زدایی</string>
-    <string name="menu_configuration">پیکربندی</string>
+    <string name="menu_configuration">کانفیگ‌ها</string>
     <string name="menu_group">گروه</string>
     <string name="menu_about">درباره</string>
     <string name="theme">تم</string>
@@ -65,7 +65,7 @@
     <string name="show_direct_speed_sum">سرعت ترافیک را بدون پروکسی نیز در اعلان نشان دهید</string>
     <string name="security_settings">تنظیمات امنیتی TLS</string>
     <string name="allow_insecure">اجازه ناامن</string>
-    <string name="allow_insecure_sum">غیرفعال کردن بررسی گواهی. وقتی فعال باشد، این پیکربندی به اندازه متن ساده ایمن است</string>
+    <string name="allow_insecure_sum">غیرفعال کردن بررسی گواهی. وقتی فعال باشد، این کانفیگ به اندازه متن ساده ایمن است</string>
     <string name="speed_detail">پروکسی：%1$s↑%2$s↓\nمستقیم：%3$s↑%4$s↓</string>
     <string name="speed">%s/ثانیه</string>
     <string name="connection_test_testing">آزمایش کردن…</string>
@@ -113,8 +113,8 @@
     <string name="early_data_header_name">نام هدر داده اولیه</string>
     <string name="encryption">رمزگذاری</string>
     <string name="extra_headers">هدر های اضافی</string>
-    <string name="config_type">نوع پیکربندی</string>
-    <string name="edit_config">ویرایش پیکربندی</string>
+    <string name="config_type">نوع کانفیگ</string>
+    <string name="edit_config">ویرایش کانفیگ</string>
     <!-- feature category -->
     <string name="metered">اشاره گر اندازه گیری شده</string>
     <string name="metered_summary">سیستم راهنمایی برای برخورد با VPN به عنوان اندازه‌گیری شده
@@ -148,10 +148,10 @@
     <string name="enable_mux">فعال کردن مولتی پلکسر</string>
     <string name="tcp_keep_alive_interval">TCP بازه تحویل بسته را فعال نگه می دارد</string>
     <string name="proxied_apps">حالت VPN برنامه‌ها</string>
-    <string name="proxied_apps_summary">حالت VPN را برای برنامه های انتخابی پیکربندی کنید</string>
+    <string name="proxied_apps_summary">حالت VPN را برای برنامه های انتخابی کانفیگ کنید</string>
     <string name="on">روشن</string>
     <string name="off">خاموش</string>
-    <string name="search_apps">جستجو کردن…</string>
+    <string name="search_apps">جستجو…</string>
     <string name="scanning">اسکن کردن…</string>
     <string name="invert_selections">معکوس کردن انتخاب ها</string>
     <string name="clear_selections">پاک کردن انتخاب ها</string>
@@ -186,13 +186,13 @@
     <string name="add_profile">افزودن پروفایل</string>
     <string name="select_profile">انتخاب پروفایل</string>
     <string name="proxy_chain">زنجیره پروکسی</string>
-    <string name="custom_config">پیکربندی سفارشی</string>
+    <string name="custom_config">کانفیگ سفارشی</string>
     <string name="balancer">متعادل کننده</string>
     <string name="balancer_settings">تنظیمات متعادل کننده</string>
     <string name="balancer_type">نوع</string>
     <string name="balancer_strategy">استراتژی</string>
     <string name="chain_settings">تنظیمات زنجیره ای</string>
-    <string name="config_settings">تنظیمات پیکربندی</string>
+    <string name="config_settings">تنظیمات کانفیگ</string>
     <string name="circular_reference">مرجع دایره ای</string>
     <string name="circular_reference_sum">مسیر نمی تواند خود را در بر بگیرد.</string>
     <string name="clear_profiles">پاک کردن</string>
@@ -211,7 +211,7 @@
     <string name="file_manager_missing">دستگاه شما فاقد انتخابگر فایل استاندارد اندروید است، لطفاً یکی مانند Material Files را نصب کنید.</string>
     <!-- share -->
     <!-- profile -->
-    <string name="profile_config">پیکربندی پروفایل</string>
+    <string name="profile_config">کانفیگ پروفایل</string>
     <string name="delete">حذف</string>
     <string name="delete_confirm_prompt">آیا مطمئنید که می خواهید این پروفایل را حذف کنید؟</string>
     <string name="share_qr_nfc">کد QR</string>
@@ -246,7 +246,7 @@
     <string name="ignore_battery_optimizations_sum">برداشتن برخی محدودیت ها</string>
     <!-- plugin -->
     <string name="plugin">پلاگین</string>
-    <string name="plugin_configure">پیکربندی…</string>
+    <string name="plugin_configure">کانفیگ…</string>
     <string name="plugin_disabled">غیرفعال شده</string>
     <string name="plugin_unknown">%s افزونه ناشناخته است</string>
     <string name="plugin_untrusted">هشدار: به نظر نمی رسد این افزونه از یک منبع معتبر شناخته شده
@@ -260,6 +260,7 @@
     <string name="apply">اعمال کردن</string>
     <string name="need_reload">برای اعمال تغییرات، سرویس پروکسی را دوباره بارگذاری کنید</string>
     <string name="license">مجوز</string>
+    <string name="license_content">جوجو | یک کلاینت اندروید مدرن، رایگان و امن مبتنی بر پوستهٔ SagerNet با هستهٔ sing-box و بهینهشده برای کاربران ایرانی\n\nتوسعهدادهشده توسط Brooklyn\n\nبا سپاس و قدردانی از زحمات ارزشمند Victoria و تیم Husi\n\nاین برنامه یک نرمافزار آزاد و انشعابی از کلاینت Husi است.\nحقوق مادی و معنوی اثر اصلی متعلق به پدیدآورندگان آن بوده و این پروژه در چارچوب همان مجوز منتشر میشود.\n\nشما میتوانید این برنامه را مطابق با قوانین محل استفادهٔ خود و تحت شرایط مجوز عمومی همگانی گنو (GNU GPL) نسخهٔ 3 یا هر نسخهٔ جدیدتر که توسط Free Software Foundation منتشر شده است استفاده، بازتوزیع و یا تغییر دهید.\n\nاین برنامه با این امید توزیع میشود که مفید باشد، بهویژه برای کاربران ایرانی، اما بدون هیچگونه ضمانت؛\nحتی بدون ضمانت ضمنیِ قابلیت فروش، مناسب بودن برای هدفی خاص، امنیت و عدم سوءاستفاده.\n\nبرای جزئیات بیشتر به http://www.gnu.org/licenses مراجعه کنید.</string>
     <string name="route_warn">قبل از افزودن قوانین سفارشی مطمئن شوید که اسناد را مطالعه کرده اید، در
         غیر این صورت ممکن است نتوانید به اینترنت متصل شوید.
     </string>
@@ -276,7 +277,7 @@
     <string name="standard">استاندارد</string>
     <string name="unavailable">غیر قابل دسترسی</string>
     <string name="always_show_address">همیشه ادرس نشان داده شود</string>
-    <string name="always_show_address_sum">همیشه آدرس سرور را روی کارت پیکربندی نمایش دهید</string>
+    <string name="always_show_address_sum">همیشه آدرس سرور را روی کارت کانفیگ نمایش دهید</string>
     <string name="clear_traffic_statistics">پاک کردن آمار ترافیک</string>
     <string name="connection_test">تست اتصال</string>
     <string name="connection_test_clear_results">پاک کردن نتایج آزمایش</string>
@@ -430,8 +431,8 @@
     <string name="create_shortcut">ایجاد میانبر</string>
     <string name="hop_interval">فاصله پرش پورت(ثانیه)</string>
     <string name="utls_fingerprint">اثر انگشت uTLS</string>
-    <string name="app_name">JoJo</string>
-    <string name="app_name_long">JoJo برای اندروید</string>
+    <string name="app_name">جوجو</string>
+    <string name="app_name_long">جوجو</string>
     <string name="menu_dashboard">داشبورد </string>
     <string name="mux_sum">مالتی‌پلکسر (Mux) برای کاهش تأخیر دست‌تکانی (هندشیک) اتصال طراحی شده است، نه برای افزایش توان عملیاتی اتصال. استفاده از مالتی‌پلکسر برای تماشای ویدیو، دانلود یا تست سرعت معمولاً نتیجه معکوس می‌دهد. اگر سرور از آن پشتیبانی نکند، قادر به دسترسی به اینترنت نخواهید بود.</string>
     <string name="mux_type">پروتکل Mux</string>
@@ -444,7 +445,7 @@
     <string name="resolve_server">یافتن آدرس سرور مطابق خط مشی IPv6</string>
     <string name="get_cert_server_hint">سرور هدف</string>
     <string name="get_cert">دریافت گواهی ها</string>
-    <string name="ech_config">پیکربندی ECH</string>
+    <string name="ech_config">کانفیگ ECH</string>
     <string name="inbound_username">نام کاربری ورودی</string>
     <string name="inbound_password">رمز عبور ورودی</string>
     <string name="scan_vpn_app">اسکن کردن اپلیکیشن های وی پی ان</string>
@@ -510,7 +511,7 @@
     <string name="custom_rule_provider">ارائه‌دهنده قوانین سفارشی</string>
     <string name="ensure_close_all">آیا از بستن اتصال %s مطمئن هستید؟</string>
     <string name="padding">حاشیه‌گذاری</string>
-    <string name="sekai">نِکوهاسِکای</string>
+    <string name="sekai">وب‌سایت ما</string>
     <string name="clash_mode">حالت کلش</string>
     <string name="network_type">نوع شبکه</string>
     <string name="network_expensive">شبکه گران است</string>

@@ -51,7 +51,7 @@ fun Project.requireFlavor(): String {
 fun Project.requireMetadata(): Properties {
     if (!::metadata.isInitialized) {
         metadata = Properties().apply {
-            load(rootProject.file("husi.properties").inputStream())
+            load(rootProject.file("jojo.properties").inputStream())
         }
     }
     return metadata

@@ -151,6 +151,7 @@ object ProfileManager {
                         name = repo.getString(R.string.bypass_icmp),
                         network = setOf(NetworkICMP),
                         outbound = RuleEntity.OUTBOUND_DIRECT,
+                        enabled = true,
                     ),
                 )
                 createRule(
@@ -159,6 +160,7 @@ object ProfileManager {
                         action = ACTION_REJECT,
                         protocol = setOf("quic"),
                         network = setOf(NetworkUDP),
+                        enabled = true,
                     ),
                 )
                 createRule(
@@ -166,6 +168,7 @@ object ProfileManager {
                         name = repo.getString(R.string.route_opt_block_ads),
                         action = ACTION_REJECT,
                         domains = "set+dns:geosite-category-ads-all",
+                        enabled = true,
                     ),
                 )
                 // JoJo: Iran-centric routing by default
@@ -179,6 +182,7 @@ object ProfileManager {
                             action = ACTION_ROUTE,
                             domains = "set+dns:geosite-$country",
                             outbound = RuleEntity.OUTBOUND_DIRECT,
+                            enabled = true,
                         ),
                         false,
                     )
@@ -188,6 +192,7 @@ object ProfileManager {
                             action = ACTION_ROUTE,
                             ip = "set-dns:geoip-$country",
                             outbound = RuleEntity.OUTBOUND_DIRECT,
+                            enabled = true,
                         ),
                         false,
                     )
@@ -198,6 +203,7 @@ object ProfileManager {
                         action = ACTION_ROUTE,
                         ip = RuleItem.CONTENT_PRIVATE,
                         outbound = RuleEntity.OUTBOUND_DIRECT,
+                        enabled = true,
                     ),
                     false,
                 )

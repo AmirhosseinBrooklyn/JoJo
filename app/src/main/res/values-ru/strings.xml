@@ -101,8 +101,7 @@
     <string name="telegram">Канал обновлений в Telegram</string>
     <string name="github">Исходный код</string>
     <string name="project">Проект</string>
-    <string name="app_desc">Универсальный набор инструментов прокси для Android, написанный на
-        Kotlin.
+    <string name="app_desc">Современный, бесплатный и безопасный клиент для Android на основе интерфейса SagerNet, работающий на ядре sing-box, оптимизированный для пользователей из Ирана
     </string>
     <plurals name="added">
         <item quantity="one">Добавлен</item>

@@ -109,9 +109,9 @@ fun AboutScreen(
     val releaseLink = remember {
         val isPreVersion = Libcore.isPreRelease(BuildConfig.VERSION_NAME)
         if (isPreVersion) {
-            "https://github.com/xchacha20-poly1305/husi/releases"
+            "https://github.com/AmirhosseinBrooklyn/JoJo/releases"
         } else {
-            "https://github.com/xchacha20-poly1305/husi/releases/latest"
+            "https://github.com/AmirhosseinBrooklyn/JoJo/releases/latest"
         }
     }
     val coreVersion = remember { Libcore.version() }
@@ -123,37 +123,31 @@ fun AboutScreen(
 
     val serviceStatus by connection.status.collectAsStateWithLifecycle()
 
-    val annotatedLicense = buildAnnotatedString {
-        val links = listOf(
-            "HystericalDragons@proton.me" to "mailto:HystericalDragons@proton.me",
-            "HystericalDragon@protomail.com" to "mailto:HystericalDragon@protomail.com",
-            "contact-sagernet@sekai.icu" to "mailto:contact-sagernet@sekai.icu",
-            "http://www.gnu.org/licenses/" to "http://www.gnu.org/licenses/",
-        )
-        val sortedLinks = links.map { (text, url) ->
-            val index = LICENSE.indexOf(text)
-            Triple(index, text, url)
-        }.sortedBy { it.first }
-
-        var lastIndex = 0
-        sortedLinks.forEach { (index, text, url) ->
-            append(LICENSE.substring(lastIndex, index))
-            withLink(
-                LinkAnnotation.Url(
-                    url,
-                    TextLinkStyles(
-                        style = SpanStyle(
-                            color = MaterialTheme.colorScheme.primary,
-                            textDecoration = TextDecoration.Underline,
+    val licenseContent = stringResource(R.string.license_content)
+    val annotatedLicense = remember(licenseContent) {
+        buildAnnotatedString {
+            val link = "http://www.gnu.org/licenses"
+            val index = licenseContent.indexOf(link)
+            if (index >= 0) {
+                append(licenseContent.substring(0, index))
+                withLink(
+                    LinkAnnotation.Url(
+                        link,
+                        TextLinkStyles(
+                            style = SpanStyle(
+                                color = MaterialTheme.colorScheme.primary,
+                                textDecoration = TextDecoration.Underline,
+                            ),
                         ),
                     ),
-                ),
-            ) {
-                append(text)
+                ) {
+                    append(link)
+                }
+                append(licenseContent.substring(index + link.length))
+            } else {
+                append(licenseContent)
             }
-            lastIndex = index + text.length
         }
-        append(LICENSE.substring(lastIndex))
     }
 
     Scaffold(
@@ -328,7 +322,7 @@ fun AboutScreen(
                             },
                             title = stringResource(R.string.sekai),
                             onCLick = {
-                                uriHandler.openUri("https://sekai.icu/sponsor")
+                                uriHandler.openUri("https://urls.st/JoJo")
                             },
                             onLongClick = {
                                 val isExpert = !DataStore.isExpert
@@ -367,7 +361,7 @@ fun AboutScreen(
                             modifier = Modifier.padding(horizontal = 16.dp),
                             icon = { Icon(ImageVector.vectorResource(R.drawable.code), null) },
                             title = stringResource(R.string.github),
-                            onCLick = { uriHandler.openUri("https://github.com/xchacha20-poly1305/husi") },
+                            onCLick = { uriHandler.openUri("https://github.com/AmirhosseinBrooklyn/JoJo") },
                         )
                         CardItem(
                             modifier = Modifier.padding(horizontal = 16.dp),
@@ -378,7 +372,7 @@ fun AboutScreen(
                                 )
                             },
                             title = stringResource(R.string.translate_platform),
-                            onCLick = { uriHandler.openUri("https://hosted.weblate.org/projects/husi/husi/") },
+                            onCLick = { uriHandler.openUri("https://github.com/AmirhosseinBrooklyn/JoJo") },
                         )
                     }
                 }
