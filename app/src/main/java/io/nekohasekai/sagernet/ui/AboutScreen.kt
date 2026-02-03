@@ -124,7 +124,8 @@ fun AboutScreen(
     val serviceStatus by connection.status.collectAsStateWithLifecycle()
 
     val licenseContent = stringResource(R.string.license_content)
-    val annotatedLicense = remember(licenseContent) {
+    val linkColor = MaterialTheme.colorScheme.primary
+    val annotatedLicense = remember(licenseContent, linkColor) {
         buildAnnotatedString {
             val link = "http://www.gnu.org/licenses"
             val index = licenseContent.indexOf(link)
@@ -135,7 +136,7 @@ fun AboutScreen(
                         link,
                         TextLinkStyles(
                             style = SpanStyle(
-                                color = MaterialTheme.colorScheme.primary,
+                                color = linkColor,
                                 textDecoration = TextDecoration.Underline,
                             ),
                         ),

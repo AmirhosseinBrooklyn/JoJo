@@ -151,7 +151,6 @@ object ProfileManager {
                         name = repo.getString(R.string.bypass_icmp),
                         network = setOf(NetworkICMP),
                         outbound = RuleEntity.OUTBOUND_DIRECT,
-                        enabled = true,
                     ),
                 )
                 createRule(
