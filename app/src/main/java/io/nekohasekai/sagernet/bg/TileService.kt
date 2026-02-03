@@ -7,7 +7,9 @@ import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat
 import io.nekohasekai.sagernet.R
 import io.nekohasekai.sagernet.database.DataStore
+import io.nekohasekai.sagernet.database.DataStore
 import io.nekohasekai.sagernet.repository.repo
+import io.nekohasekai.sagernet.utils.LocaleHelper
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -28,8 +30,7 @@ class TileService : BaseTileService() {
     private val scope = CoroutineScope(Dispatchers.Main.immediate)
 
     override fun attachBaseContext(newBase: Context) {
-        val languageContext = ContextCompat.getContextForLanguage(newBase)
-        super.attachBaseContext(languageContext)
+        super.attachBaseContext(LocaleHelper.attachBaseContext(newBase))
     }
 
     override fun onStartListening() {

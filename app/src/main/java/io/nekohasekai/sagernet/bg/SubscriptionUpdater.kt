@@ -28,8 +28,10 @@ object SubscriptionUpdater {
         if (subscriptions.isEmpty()) return
 
         // PeriodicWorkRequest.MIN_PERIODIC_INTERVAL_MILLIS
-        var minDelay =
-            subscriptions.minByOrNull { it.subscription!!.autoUpdateDelay }!!.subscription!!.autoUpdateDelay.toLong()
+        val minSubscription = subscriptions.minByOrNull { it.subscription!!.autoUpdateDelay }
+        if (minSubscription == null) return
+        
+        var minDelay = minSubscription.subscription!!.autoUpdateDelay.toLong()
         val now = System.currentTimeMillis() / 1000L
         var minInitDelay =
             subscriptions.minOf { now - it.subscription!!.lastUpdated - (minDelay * 60) }

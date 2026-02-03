@@ -21,6 +21,7 @@ import io.nekohasekai.sagernet.ktx.blankAsNull
 import io.nekohasekai.sagernet.repository.repo
 import io.nekohasekai.sagernet.ui.VpnRequestActivity
 import io.nekohasekai.sagernet.utils.Subnet
+import io.nekohasekai.sagernet.utils.LocaleHelper
 import android.net.VpnService as BaseVpnService
 
 @SuppressLint("VpnServicePolicy")
@@ -37,8 +38,7 @@ class VpnService : BaseVpnService(),
     }
 
     override fun attachBaseContext(newBase: Context) {
-        val languageContext = ContextCompat.getContextForLanguage(newBase)
-        super.attachBaseContext(languageContext)
+        super.attachBaseContext(LocaleHelper.attachBaseContext(newBase))
     }
 
     var conn: ParcelFileDescriptor? = null

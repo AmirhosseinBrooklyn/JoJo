@@ -23,6 +23,7 @@ import io.nekohasekai.sagernet.ktx.toStringIterator
 import io.nekohasekai.sagernet.repository.SagerRepository
 import io.nekohasekai.sagernet.repository.repo
 import io.nekohasekai.sagernet.utils.CrashHandler
+import io.nekohasekai.sagernet.utils.LocaleHelper
 import io.nekohasekai.sagernet.utils.PackageCache
 import kotlinx.coroutines.DEBUG_PROPERTY_NAME
 import kotlinx.coroutines.DEBUG_PROPERTY_VALUE_ON
@@ -35,7 +36,8 @@ class SagerNet : Application(),
     WorkConfiguration.Provider {
 
     override fun attachBaseContext(base: Context) {
-        super.attachBaseContext(base)
+        // Initialize Persian locale at the earliest possible point
+        super.attachBaseContext(LocaleHelper.attachBaseContext(base))
 
         repo = SagerRepository(this, isMainProcess, isBgProcess)
     }
@@ -47,12 +49,6 @@ class SagerNet : Application(),
 
     override fun onCreate() {
         super.onCreate()
-
-        if (androidx.appcompat.app.AppCompatDelegate.getApplicationLocales().isEmpty) {
-             androidx.appcompat.app.AppCompatDelegate.setApplicationLocales(
-                 androidx.core.os.LocaleListCompat.forLanguageTags("fa")
-             )
-        }
 
         System.setProperty(DEBUG_PROPERTY_NAME, DEBUG_PROPERTY_VALUE_ON)
         Thread.setDefaultUncaughtExceptionHandler(CrashHandler)

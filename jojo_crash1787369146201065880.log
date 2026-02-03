@@ -1,0 +1,687 @@
+JoJo 1.0.1 (416) FOSS
+Date: ۲۰۲۶-۰۲-۰۳ ۰۴:۰۵:۱۳.۳۳۷ UTC
+
+OS_VERSION: 6.6.89-android15-8-gf4dc45704e54-abogki446052083-4k
+SDK_INT: 36
+RELEASE: 16
+ID: BP2A.250605.015
+DISPLAY: PJZ110_16.0.3.501(CN01)
+INCREMENTAL: V.2792a41-5a3c48-5a3c47
+SECURITY_PATCH: 2026-01-01
+IS_DEBUGGABLE: null
+IS_EMULATOR: null
+IS_TREBLE_ENABLED: true
+TYPE: user
+TAGS: release-keys
+
+MANUFACTURER: OnePlus
+BRAND: OnePlus
+MODEL: PJZ110
+PRODUCT: PJZ110
+BOARD: sun
+HARDWARE: qcom
+DEVICE: OP5D0DL1
+SUPPORTED_ABIS: arm64-v8a
+
+Settings: 
+profileGroup: 1
+acceptedLicense: true
+mixedPort: 2080
+portLocalDns: 0
+rulesFirstCreate: true
+
+
+Logcat: 
+
+--------- beginning of crash
+02-03 07:27:24.530 18048 18469 E OplusExceptionHelper: [OPLUS]FATAL EXCEPTION: DefaultDispatcher-worker-14 @coroutine#1397
+02-03 07:27:24.530 18048 18469 E OplusExceptionHelper: Process: io.jojo.app.debug, PID: 18048
+02-03 07:27:24.530 18048 18469 E OplusExceptionHelper: java.lang.NullPointerException
+02-03 07:27:24.530 18048 18469 E OplusExceptionHelper: 	at io.nekohasekai.sagernet.bg.SubscriptionUpdater.reconfigureUpdater(SubscriptionUpdater.kt:27)
+02-03 07:27:24.530 18048 18469 E OplusExceptionHelper: 	at io.nekohasekai.sagernet.bg.SubscriptionUpdater$reconfigureUpdater$1.invokeSuspend(Unknown Source:14)
+02-03 07:27:24.530 18048 18469 E OplusExceptionHelper: 	at _COROUTINE._BOUNDARY._(CoroutineDebugging.kt:42)
+02-03 07:27:24.530 18048 18469 E OplusExceptionHelper: 	at io.nekohasekai.sagernet.ui.GroupScreenViewModel$commit$1.invokeSuspend(GroupScreenViewModel.kt:187)
+02-03 07:27:24.530 18048 18469 E OplusExceptionHelper: 	Suppressed: kotlinx.coroutines.internal.DiagnosticCoroutineContextException: [CoroutineId(1397), "coroutine#1397":StandaloneCoroutine{Cancelling}@1d686e0, Dispatchers.Default]
+02-03 07:27:24.530 18048 18469 E OplusExceptionHelper: Caused by: java.lang.NullPointerException
+02-03 07:27:24.530 18048 18469 E OplusExceptionHelper: 	at io.nekohasekai.sagernet.bg.SubscriptionUpdater.reconfigureUpdater(SubscriptionUpdater.kt:27)
+02-03 07:27:24.530 18048 18469 E OplusExceptionHelper: 	at io.nekohasekai.sagernet.bg.SubscriptionUpdater$reconfigureUpdater$1.invokeSuspend(Unknown Source:14)
+02-03 07:27:24.530 18048 18469 E OplusExceptionHelper: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+02-03 07:27:24.530 18048 18469 E OplusExceptionHelper: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+02-03 07:27:24.530 18048 18469 E OplusExceptionHelper: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:124)
+02-03 07:27:24.530 18048 18469 E OplusExceptionHelper: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+02-03 07:27:24.530 18048 18469 E OplusExceptionHelper: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:586)
+02-03 07:27:24.530 18048 18469 E OplusExceptionHelper: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:820)
+02-03 07:27:24.530 18048 18469 E OplusExceptionHelper: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:717)
+02-03 07:27:24.530 18048 18469 E OplusExceptionHelper: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
+--------- beginning of system
+02-03 07:34:36.308 19138 19138 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application io.nekohasekai.sagernet.ui.profile.ProxySetSettingsActivity@10ea050 hasOnBackInvokedCallBackEnabled
+02-03 07:34:36.314 19138 19138 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application io.nekohasekai.sagernet.ui.profile.ProxySetSettingsActivity@10ea050 hasOnBackInvokedCallBackEnabled
+02-03 07:34:37.640 19138 19138 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application io.nekohasekai.sagernet.ui.profile.ProxySetSettingsActivity@10ea050 hasOnBackInvokedCallBackEnabled
+02-03 07:34:37.645 19138 19138 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application io.nekohasekai.sagernet.ui.profile.ProxySetSettingsActivity@10ea050 hasOnBackInvokedCallBackEnabled
+02-03 07:34:39.172 19138 19138 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application io.nekohasekai.sagernet.ui.profile.ProxySetSettingsActivity@10ea050 hasOnBackInvokedCallBackEnabled
+02-03 07:34:39.178 19138 19138 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application io.nekohasekai.sagernet.ui.profile.ProxySetSettingsActivity@10ea050 hasOnBackInvokedCallBackEnabled
+02-03 07:34:40.216 19138 19138 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application io.nekohasekai.sagernet.ui.MainActivity@7a5994e hasOnBackInvokedCallBackEnabled
+02-03 07:34:40.216 19138 19138 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application io.nekohasekai.sagernet.ui.MainActivity@7a5994e hasOnBackInvokedCallBackEnabled
+02-03 07:34:40.217 19138 19138 D ActivityThread: ComponentInfo{io.jojo.app.debug/io.nekohasekai.sagernet.ui.MainActivity} checkFinished=false 2
+02-03 07:34:40.217 19138 19138 D ResourcesManagerExtImpl: applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:0
+02-03 07:34:40.224 19138 19138 D VRI[MainActivity]: relayoutWindow result, sizeChanged:false, surfaceControlChanged:true, transformHintChanged:false, mSurfaceSize:Point(1440, 3168), mLastSurfaceSize:Point(1440, 3168), mWidth:1440, mHeight:3168, requestedWidth:1440, requestedHeight:3168, transformHint:0, installOrientation:0, displayRotation:0, isSurfaceValid:true, attr.flag:-2122252032, tmpFrames:ClientWindowFrames{frame=[0,0][1440,3168] display=[0,0][1440,3168] parentFrame=[0,0][0,0]}, relayoutAsync:false, mSyncSeqId:0
+02-03 07:34:40.224 19138 19138 W VRI[MainActivity]: updateBlastSurfaceIfNeeded, surfaceSize:Point(1440, 3168), lastSurfaceSize:Point(1440, 3168), format:-2, blastBufferQueue:null
+02-03 07:34:40.229 19138 24247 E OplusExceptionHelper: [OPLUS]FATAL EXCEPTION: DefaultDispatcher-worker-3 @coroutine#3515
+02-03 07:34:40.229 19138 24247 E OplusExceptionHelper: Process: io.jojo.app.debug, PID: 19138
+02-03 07:34:40.229 19138 24247 E OplusExceptionHelper: java.lang.NullPointerException
+02-03 07:34:40.229 19138 24247 E OplusExceptionHelper: 	at io.nekohasekai.sagernet.database.DataStore.selectedGroupForImport(DataStore.kt:90)
+02-03 07:34:40.229 19138 24247 E OplusExceptionHelper: 	at io.nekohasekai.sagernet.ui.profile.ProfileSettingsViewModel$save$1.invokeSuspend(ProfileSettingsViewModel.kt:98)
+02-03 07:34:40.229 19138 24247 E OplusExceptionHelper: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+02-03 07:34:40.229 19138 24247 E OplusExceptionHelper: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+02-03 07:34:40.229 19138 24247 E OplusExceptionHelper: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:124)
+02-03 07:34:40.229 19138 24247 E OplusExceptionHelper: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+02-03 07:34:40.229 19138 24247 E OplusExceptionHelper: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:586)
+02-03 07:34:40.229 19138 24247 E OplusExceptionHelper: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:820)
+02-03 07:34:40.229 19138 24247 E OplusExceptionHelper: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:717)
+02-03 07:34:40.229 19138 24247 E OplusExceptionHelper: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
+02-03 07:34:40.229 19138 24247 E OplusExceptionHelper: 	Suppressed: kotlinx.coroutines.internal.DiagnosticCoroutineContextException: [CoroutineId(3515), "coroutine#3515":StandaloneCoroutine{Cancelling}@4630e0b, Dispatchers.IO]
+02-03 07:34:40.313 25907 25907 V Configuration: Updating configuration, locales updated from [] to [en_US]
+02-03 07:34:40.319 25907 25907 V Configuration: Updating configuration, locales updated from [fa,en_US] to [en_US,fa]
+02-03 07:34:40.319 25907 25907 V Resources: Updating configuration with selected locales [en-US]
+02-03 07:34:40.577 25907 25907 I Quality : Odex status:io-error-no-oat filter:run-from-apk reason:unknown location:/data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/base.apk cost:256
+02-03 07:34:40.589 25907 25907 D ResourcesManagerExtImpl: applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:-1
+02-03 07:34:40.611 19138 19138 D VRI[ProxySetSettingsActivity]: relayoutWindow result, sizeChanged:false, surfaceControlChanged:true, transformHintChanged:false, mSurfaceSize:Point(1440, 3168), mLastSurfaceSize:Point(1440, 3168), mWidth:1440, mHeight:3168, requestedWidth:1440, requestedHeight:3168, transformHint:0, installOrientation:0, displayRotation:0, isSurfaceValid:false, attr.flag:-2122252032, tmpFrames:ClientWindowFrames{frame=[0,0][1440,3168] display=[0,0][1440,3168] parentFrame=[0,0][0,0]}, relayoutAsync:false, mSyncSeqId:0
+02-03 07:34:40.686 25907 25907 V Configuration: Updating configuration, locales updated from [fa,en_US] to [en_US,fa]
+02-03 07:34:40.687 25907 25907 V Resources: Updating configuration with selected locales [en-US]
+02-03 07:34:40.689 25907 25967 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+02-03 07:34:40.689 25907 25907 D ResourcesManagerExtImpl: applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:0
+02-03 07:34:40.692 25907 25907 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application com.jakewharton.processphoenix.PhoenixActivity@b4a746e hasOnBackInvokedCallBackEnabled
+02-03 07:34:40.692 25907 25907 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application com.jakewharton.processphoenix.PhoenixActivity@b4a746e hasOnBackInvokedCallBackEnabled
+02-03 07:34:40.786 25978 25978 V Configuration: Updating configuration, locales updated from [] to [en_US]
+02-03 07:34:40.791 25978 25978 V Configuration: Updating configuration, locales updated from [fa,en_US] to [en_US,fa]
+02-03 07:34:40.791 25978 25978 V Resources: Updating configuration with selected locales [en-US]
+02-03 07:34:41.031 25978 25978 I Quality : Odex status:io-error-no-oat filter:run-from-apk reason:unknown location:/data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/base.apk cost:239
+02-03 07:34:41.037 25978 25978 D ResourcesManagerExtImpl: applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:-1
+02-03 07:34:41.102 25978 25978 V Configuration: Updating configuration, locales updated from [fa,en_US] to [en_US,fa]
+02-03 07:34:41.102 25978 25978 V Resources: Updating configuration with selected locales [en-US]
+02-03 07:34:41.103 25978 26017 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+02-03 07:34:41.104 25978 25978 D ResourcesManagerExtImpl: applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:0
+02-03 07:34:41.123 25978 25978 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application io.nekohasekai.sagernet.ui.BlankActivity@5a2a3ad hasOnBackInvokedCallBackEnabled
+02-03 07:34:41.123 25978 25978 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application io.nekohasekai.sagernet.ui.BlankActivity@5a2a3ad hasOnBackInvokedCallBackEnabled
+02-03 07:34:41.213 25978 25978 D ActivityThread: ComponentInfo{io.jojo.app.debug/io.nekohasekai.sagernet.ui.BlankActivity} checkFinished=false 2
+02-03 07:34:41.213 25978 25978 D ResourcesManagerExtImpl: applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:0
+02-03 07:34:41.215 25978 25978 D OplusInputMethodUtil: init sDebug to false, init sDebugIme to false, init sAlwaysOn to false
+02-03 07:34:41.215 25978 25978 D OplusInputMethodUtil: updateDebugToClass InputMethodManager.DEBUG = false
+02-03 07:34:41.215 25978 25978 D OplusInputMethodUtil: updateDebugToClass ImeFocusController.DEBUG = false
+02-03 07:34:41.215 25978 25978 D OplusInputMethodUtil: updateDebugToClass OnBackInvokedDispatcher.DEBUG = false
+02-03 07:34:41.215 25978 25978 D OplusInputMethodUtil: updateDebugToClass InsetsController.DEBUG = false
+02-03 07:34:41.215 25978 25978 D OplusInputMethodUtil: updateDebugToClass BaseInputConnection.DEBUG = false
+02-03 07:34:41.225 25978 25978 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application io.nekohasekai.sagernet.ui.BlankActivity@5a2a3ad hasOnBackInvokedCallBackEnabled
+02-03 07:34:41.228 25978 25978 D VRI[BlankActivity]: relayoutWindow result, sizeChanged:true, surfaceControlChanged:true, transformHintChanged:false, mSurfaceSize:Point(1440, 3168), mLastSurfaceSize:Point(0, 0), mWidth:-1, mHeight:-1, requestedWidth:1440, requestedHeight:3168, transformHint:0, installOrientation:0, displayRotation:0, isSurfaceValid:true, attr.flag:-2122252032, tmpFrames:ClientWindowFrames{frame=[0,0][1440,3168] display=[0,0][1440,3168] parentFrame=[0,0][0,0]}, relayoutAsync:false, mSyncSeqId:0
+02-03 07:34:41.228 25978 25978 W VRI[BlankActivity]: updateBlastSurfaceIfNeeded, surfaceSize:Point(1440, 3168), lastSurfaceSize:Point(0, 0), format:-2, blastBufferQueue:null
+02-03 07:34:41.241 25978 25978 W VRI[BlankActivity]: handleResized, msg:, frameChanged:false, configChanged:false, displayChanged:false, attachedFrameChanged:false, compatScaleChanged:false, pendingDragResizing=false
+02-03 07:34:46.830 25978 25978 D VRI[BlankActivity]: relayoutWindow result, sizeChanged:false, surfaceControlChanged:true, transformHintChanged:false, mSurfaceSize:Point(1440, 3168), mLastSurfaceSize:Point(1440, 3168), mWidth:1440, mHeight:3168, requestedWidth:1440, requestedHeight:3168, transformHint:0, installOrientation:0, displayRotation:0, isSurfaceValid:false, attr.flag:-2122252032, tmpFrames:ClientWindowFrames{frame=[0,0][1440,3168] display=[0,0][1440,3168] parentFrame=[0,0][0,0]}, relayoutAsync:false, mSyncSeqId:0
+--------- beginning of main
+02-03 07:35:06.677 26463 26463 I .jojo.app.debug: isSwordfishLaunchAppEnabled_ 1 isSwordfishInstallAppEnabled_ 1
+02-03 07:35:06.677 26463 26463 I .jojo.app.debug: Late-enabling -Xcheck:jni
+02-03 07:35:06.699 26463 26463 E .jojo.app.debug: Unknown bits set in runtime_flags: 0x40000000
+02-03 07:35:06.699 26463 26463 I .jojo.app.debug: Using CollectorTypeCMC GC.
+02-03 07:35:06.703 26463 26463 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+02-03 07:35:06.705 26463 26463 W libc    : Access denied finding property "persist.vendor.sys.activitylog"
+02-03 07:35:06.706 26463 26463 I OneTrace: Mark active for pid=26463? true
+02-03 07:35:06.706 26463 26463 D cutils-dev: otrace_set_tracing_enabled? true tag:0
+02-03 07:35:06.706 26463 26486 D cutils-dev: properties changed in otrace_seq_number_changed!
+02-03 07:35:06.715 26463 26492 D OplusActivityManager: get AMS extension: android.os.BinderProxy@cf639e6
+02-03 07:35:06.716 26463 26492 D SurfaceSyncGroup: preCreateSurfaceSyncGroupTimerThread
+02-03 07:35:06.717 26463 26463 D CompactWindowAppManager: initCompactApplicationInfo CompactMode: , NormalMode: 
+02-03 07:35:06.722 26463 26463 V Configuration: Updating configuration, locales updated from [] to [en_US]
+02-03 07:35:06.723 26463 26463 D OplusScrollToTopManager: setIsInWhiteList false
+02-03 07:35:06.723 26463 26463 D OplusViewDebugManager: OplusViewDebugManager Constructor android.view.debug.OplusViewDebugManager@33a31d4 [mHasViewDebugProperty true] [mHasMsgDebugProperty false] [DEBUG false] [EXTRAINFOENABLE false] [LIGHT_OS false]
+02-03 07:35:06.731 26463 26463 V Configuration: Updating configuration, locales updated from [fa,en_US] to [en_US,fa]
+02-03 07:35:06.731 26463 26463 V Resources: Updating configuration with selected locales [en-US]
+02-03 07:35:06.732 26463 26463 W libc    : Access denied finding property "ro.odm.prev.product.name"
+02-03 07:35:06.733 26463 26463 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+02-03 07:35:06.733 26463 26463 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+02-03 07:35:06.965 26463 26463 I Quality : Odex status:io-error-no-oat filter:run-from-apk reason:unknown location:/data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/base.apk cost:232
+02-03 07:35:06.966 26463 26463 D nativeloader: Configuring clns-9 for other apk /data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/lib/arm64:/data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/io.jojo.app.debug
+02-03 07:35:06.968 26463 26463 I .jojo.app.debug: AssetManager2(0xb400007b6d6a0a28) locale list changing from [] to [fa]
+02-03 07:35:06.971 26463 26463 V GraphicsEnvironment: Currently set values for:
+02-03 07:35:06.971 26463 26463 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+02-03 07:35:06.971 26463 26463 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+02-03 07:35:06.971 26463 26463 V GraphicsEnvironment: io.jojo.app.debug is not listed in per-application setting
+02-03 07:35:06.971 26463 26463 V GraphicsEnvironment: ANGLE allowlist from config: 
+02-03 07:35:06.971 26463 26463 V GraphicsEnvironment: io.jojo.app.debug is not listed in ANGLE allowlist or settings, returning default
+02-03 07:35:06.971 26463 26463 V GraphicsEnvironment: Updatable production driver is not supported on the device.
+02-03 07:35:06.972 26463 26463 D ResourcesManagerExtImpl: applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:-1
+02-03 07:35:06.979 26463 26463 D OplusGraphicsEvent: OplusGraphicsEventListener create now!
+02-03 07:35:06.980 26463 26463 D OplusGraphicsEvent: addEventListener success!
+02-03 07:35:06.980 26463 26463 E [UAH_CLIENT]: uahInit enter
+02-03 07:35:06.981 26463 26463 W .jojo.app.debug: AIBinder_linkToDeath is being called with a non-null cookie and no onUnlink callback set. This might not be intended. AIBinder_DeathRecipient_setOnUnlinked should be called first.
+02-03 07:35:06.981 26463 26463 I [UAH_CLIENT]: UahGetFeatureStatus enter
+02-03 07:35:06.995 26463 26463 D nativeloader: Load /data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/lib/arm64/libgojni.so using class loader ns clns-9 (caller=/data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/base.apk!classes27.dex): ok
+02-03 07:35:07.018 26463 26509 D nativeloader: Load /data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/lib/arm64/libdatastore_shared_counter.so using class loader ns clns-9 (caller=/data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/base.apk!classes26.dex): ok
+02-03 07:35:07.054 26463 26463 V Configuration: Updating configuration, locales updated from [fa,en_US] to [en_US,fa]
+02-03 07:35:07.054 26463 26463 V Resources: Updating configuration with selected locales [en-US]
+02-03 07:35:07.055 26463 26463 I HWUI    : SupportApps size 9
+02-03 07:35:07.055 26463 26463 D ExtensionsLoader: createInstance(64bit) : createExtendedFactory
+02-03 07:35:07.055 26463 26463 D ExtensionsLoader: Opened libSchedAssistExtImpl.so
+02-03 07:35:07.055 26463 26463 E SchedAssist: open sharedFd failed with error=Permission denied
+02-03 07:35:07.055 26463 26463 E SchedAssist: open sharedFd failed with error=Permission denied
+02-03 07:35:07.055 26463 26463 E SchedAssist: open sharedFd failed with error=Permission denied
+02-03 07:35:07.056 26463 26527 D ExtensionsLoader: createInstance(64bit) : createExtendedFactory
+02-03 07:35:07.056 26463 26527 D ExtensionsLoader: Opened libSchedAssistExtImpl.so
+02-03 07:35:07.056 26463 26527 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+02-03 07:35:07.056 26463 26463 I .jojo.app.debug: AssetManager2(0xb400007b6d6a0d28) locale list changing from [] to [fa]
+02-03 07:35:07.057 26463 26527 D vulkan  : searching for layers in '/data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/lib/arm64'
+02-03 07:35:07.057 26463 26527 D vulkan  : searching for layers in '/data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/base.apk!/lib/arm64-v8a'
+02-03 07:35:07.057 26463 26463 D ResourcesManagerExtImpl: applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:0
+02-03 07:35:07.058 26463 26527 D colorx  : I can't find colorx layer , let's enumerate colorx layers first.
+02-03 07:35:07.062 26463 26527 I AdrenoVK-0: ===== BEGIN DUMP OF OVERRIDDEN SETTINGS =====
+02-03 07:35:07.062 26463 26527 I AdrenoVK-0: ===== END DUMP OF OVERRIDDEN SETTINGS =====
+02-03 07:35:07.064 26463 26527 D qdgralloc: Fetching IMapper5 from QtiMapper5
+02-03 07:35:07.066 26463 26463 I .jojo.app.debug: AssetManager2(0xb400007b6d7d3028) locale list changing from [] to [fa]
+02-03 07:35:07.068 26463 26463 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+02-03 07:35:07.069 26463 26527 I SnapAlloc: Graphics lib is available
+02-03 07:35:07.072 26463 26520 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemjob.SystemJobService
+02-03 07:35:07.072 26463 26520 D WM-Schedulers: Created SystemJobScheduler and enabled SystemJobService
+02-03 07:35:07.073 26463 26527 I Adreno-UNKNOWN: Using previously loaded IMapper library.
+02-03 07:35:07.075 26463 26527 I AdrenoVK-0: QUALCOMM build          : d9238bf8f8, I1da920a053
+02-03 07:35:07.075 26463 26527 I AdrenoVK-0: Build Date              : 11/14/25
+02-03 07:35:07.075 26463 26527 I AdrenoVK-0: Shader Compiler Version : E031.47.18.44
+02-03 07:35:07.075 26463 26527 I AdrenoVK-0: Local Branch            : 
+02-03 07:35:07.075 26463 26527 I AdrenoVK-0: Remote Branch           : refs/tags/AU_LINUX_ANDROID_LA.VENDOR.15.4.0.11.00.00.1088.811
+02-03 07:35:07.075 26463 26527 I AdrenoVK-0: Remote Branch           : NONE
+02-03 07:35:07.075 26463 26527 I AdrenoVK-0: Reconstruct Branch      : NOTHING
+02-03 07:35:07.075 26463 26527 I AdrenoVK-0: Build Config            : S P 18.0.0 AArch64
+02-03 07:35:07.075 26463 26527 I AdrenoVK-0: Driver Path             : /vendor/lib64/hw/vulkan.adreno.so
+02-03 07:35:07.075 26463 26527 I AdrenoVK-0: Driver Version          : 0800.63
+02-03 07:35:07.075 26463 26527 I AdrenoVK-0: PFP                     : 0x01500077
+02-03 07:35:07.075 26463 26527 I AdrenoVK-0: ME                      : 0x01500014
+02-03 07:35:07.075 26463 26527 I AdrenoVK-0: Application Name    : android framework
+02-03 07:35:07.075 26463 26527 I AdrenoVK-0: Process Name        : io.jojo.app.debug
+02-03 07:35:07.075 26463 26527 I AdrenoVK-0: Application Version : 0x00000000
+02-03 07:35:07.075 26463 26527 I AdrenoVK-0: Engine Name         : android framework
+02-03 07:35:07.075 26463 26527 I AdrenoVK-0: Engine Version      : 0x00000000
+02-03 07:35:07.075 26463 26527 I AdrenoVK-0: Api Version         : 0x00401000
+02-03 07:35:07.075 26463 26531 D WM-ForceStopRunnable: Is default app process = true
+02-03 07:35:07.075 26463 26531 D WM-ForceStopRunnable: Performing cleanup operations.
+02-03 07:35:07.077 26463 26527 D ExtensionsLoader: createInstance(64bit) : createExtendedFactory
+02-03 07:35:07.077 26463 26527 D ExtensionsLoader: Opened libeglextimpl.so
+02-03 07:35:07.077 26463 26520 D WM-RemoteWorkManagerCli: Creating a new session
+02-03 07:35:07.077 26463 26527 D PreCache: [IPreCacheRus]loadRUSConfigs#102 failed to transact: -22 prc:io.jojo.app.debug
+02-03 07:35:07.079 26463 26463 I oplus.android.OplusFrameworkFactoryImpl: Unknow feature:IOplusTextViewRTLUtilForUG
+02-03 07:35:07.082 26463 26463 D CompatChangeReporter: Compat change id reported: 377864165; UID 10592; state: ENABLED
+02-03 07:35:07.083 26463 26463 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+02-03 07:35:07.083 26463 26463 D OplusWindowManager: get WMS extension: android.os.BinderProxy@8ec96e2
+02-03 07:35:07.090 26463 26463 E OplusPredictiveBackController:  NoSuchMethodException 
+02-03 07:35:07.090 26463 26463 E OplusPredictiveBackController:  NoSuchMethodException 
+02-03 07:35:07.090 26463 26463 E OplusPredictiveBackController:  NoSuchMethodException 
+02-03 07:35:07.090 26463 26463 E OplusPredictiveBackController:  NoSuchMethodException 
+02-03 07:35:07.090 26463 26463 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application io.nekohasekai.sagernet.ui.MainActivity@b1f55bf hasOnBackInvokedCallBackEnabled
+02-03 07:35:07.090 26463 26463 D OplusPredictiveBackController: initPredictiveBackConfig for io.nekohasekai.sagernet.ui.MainActivity@b1f55bf initPredictiveBackConfig mShouldInterceptKeyEvent false
+02-03 07:35:07.090 26463 26463 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application io.nekohasekai.sagernet.ui.MainActivity@b1f55bf hasOnBackInvokedCallBackEnabled
+02-03 07:35:07.096 26463 26535 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemalarm.RescheduleReceiver
+02-03 07:35:07.098 26463 26463 I .jojo.app.debug: hiddenapi: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/appcompat/widget/ViewUtils; (domain=app) using reflection: allowed
+02-03 07:35:07.099 26463 26463 D ActivityThread: ComponentInfo{io.jojo.app.debug/io.nekohasekai.sagernet.ui.MainActivity} checkFinished=false 2
+02-03 07:35:07.099 26463 26463 D ResourcesManagerExtImpl: applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:0
+02-03 07:35:07.102 26463 26463 D OplusInputMethodUtil: init sDebug to false, init sDebugIme to false, init sAlwaysOn to false
+02-03 07:35:07.102 26463 26463 D OplusInputMethodUtil: updateDebugToClass InputMethodManager.DEBUG = false
+02-03 07:35:07.102 26463 26463 D OplusInputMethodUtil: updateDebugToClass ImeFocusController.DEBUG = false
+02-03 07:35:07.102 26463 26463 D OplusInputMethodUtil: updateDebugToClass OnBackInvokedDispatcher.DEBUG = false
+02-03 07:35:07.102 26463 26463 D OplusInputMethodUtil: updateDebugToClass InsetsController.DEBUG = false
+02-03 07:35:07.102 26463 26463 D OplusInputMethodUtil: updateDebugToClass BaseInputConnection.DEBUG = false
+02-03 07:35:07.105 26463 26463 D WindowManager: Add to mViews: com.android.internal.policy.DecorView{9c76731 I.E...... R.....I. 0,0-0,0 alpha=1.0 viewInfo = }[MainActivity],pkg= io.jojo.app.debug
+02-03 07:35:07.106 26463 26527 D ExtensionsLoader: createInstance(64bit) : createExtendedFactory
+02-03 07:35:07.106 26463 26527 D ExtensionsLoader: Opened libhwuiextimpl.so
+02-03 07:35:07.106 26463 26527 D skia    : setRusSupported enable 1
+02-03 07:35:07.108 26537 26537 I jo.app.debug:bg: isSwordfishLaunchAppEnabled_ 1 isSwordfishInstallAppEnabled_ 1
+02-03 07:35:07.108 26537 26537 I jo.app.debug:bg: Late-enabling -Xcheck:jni
+02-03 07:35:07.109 26463 26463 D ViewRootImplExtImpl: onDisplayChanged -1 for VRI android.view.ViewRootImpl@1fa456d
+02-03 07:35:07.110 26463 26463 D ResourcesManagerExtImpl: applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:0
+02-03 07:35:07.111 26463 26463 E OplusBracketLog: [OplusViewMirrorManager] updateHostViewRootIfNeeded, not support android.view.ViewRootImpl@1fa456d
+02-03 07:35:07.139 26537 26537 E jo.app.debug:bg: Unknown bits set in runtime_flags: 0x40000000
+02-03 07:35:07.139 26537 26537 I jo.app.debug:bg: Using CollectorTypeCMC GC.
+02-03 07:35:07.143 26537 26537 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+02-03 07:35:07.146 26537 26537 W libc    : Access denied finding property "persist.vendor.sys.activitylog"
+02-03 07:35:07.146 26537 26537 I OneTrace: Mark active for pid=26537? true
+02-03 07:35:07.146 26537 26537 D cutils-dev: otrace_set_tracing_enabled? true tag:0
+02-03 07:35:07.146 26537 26550 D cutils-dev: properties changed in otrace_seq_number_changed!
+02-03 07:35:07.150 26463 26463 I .jojo.app.debug: hiddenapi: Accessing hidden method Landroid/os/SystemProperties;->addChangeCallback(Ljava/lang/Runnable;)V (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/compose/ui/platform/AndroidComposeView$Companion; (domain=app) using reflection: allowed
+02-03 07:35:07.153 26463 26463 D Vibrator: SystemVibrator Created
+02-03 07:35:07.154 26537 26556 D OplusActivityManager: get AMS extension: android.os.BinderProxy@cf639e6
+02-03 07:35:07.156 26537 26537 D CompactWindowAppManager: initCompactApplicationInfo CompactMode: , NormalMode: 
+02-03 07:35:07.157 26537 26537 V Configuration: Updating configuration, locales updated from [] to [en_US]
+02-03 07:35:07.157 26537 26537 D OplusScrollToTopManager: setIsInWhiteList false
+02-03 07:35:07.158 26537 26537 D OplusViewDebugManager: OplusViewDebugManager Constructor android.view.debug.OplusViewDebugManager@33a31d4 [mHasViewDebugProperty true] [mHasMsgDebugProperty false] [DEBUG false] [EXTRAINFOENABLE false] [LIGHT_OS false]
+02-03 07:35:07.165 26537 26537 V Configuration: Updating configuration, locales updated from [fa,en_US] to [en_US,fa]
+02-03 07:35:07.165 26537 26537 V Resources: Updating configuration with selected locales [en-US]
+02-03 07:35:07.166 26537 26537 W libc    : Access denied finding property "ro.odm.prev.product.name"
+02-03 07:35:07.167 26537 26537 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+02-03 07:35:07.167 26537 26537 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+02-03 07:35:07.256 26463 26486 I .jojo.app.debug: Compiler allocated 7246KB to compile void android.view.ViewRootImpl.performTraversals()
+02-03 07:35:07.277 26463 26463 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application io.nekohasekai.sagernet.ui.MainActivity@b1f55bf hasOnBackInvokedCallBackEnabled
+02-03 07:35:07.277 26463 26463 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application io.nekohasekai.sagernet.ui.MainActivity@b1f55bf hasOnBackInvokedCallBackEnabled
+02-03 07:35:07.281 26463 26463 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application io.nekohasekai.sagernet.ui.MainActivity@b1f55bf hasOnBackInvokedCallBackEnabled
+02-03 07:35:07.366 26463 26463 D ViewRootImplExtImpl: wrapConfigInfoIntoFlags rotation=0, smallestScreenWidthDp=0, residentWS=false, scenario=0, bounds=Rect(0, 0 - 1440, 3168), relayoutAsync=false, flags=0, newFlags=1660944384, title=io.jojo.app.debug/io.nekohasekai.sagernet.ui.MainActivity
+02-03 07:35:07.370 26463 26463 D VRI[MainActivity]: relayoutWindow result, sizeChanged:true, surfaceControlChanged:true, transformHintChanged:false, mSurfaceSize:Point(1440, 3168), mLastSurfaceSize:Point(0, 0), mWidth:-1, mHeight:-1, requestedWidth:1440, requestedHeight:3168, transformHint:0, installOrientation:0, displayRotation:0, isSurfaceValid:true, attr.flag:-2122252032, tmpFrames:ClientWindowFrames{frame=[0,0][1440,3168] display=[0,0][1440,3168] parentFrame=[0,0][0,0]}, relayoutAsync:false, mSyncSeqId:0
+02-03 07:35:07.370 26463 26463 W VRI[MainActivity]: updateBlastSurfaceIfNeeded, surfaceSize:Point(1440, 3168), lastSurfaceSize:Point(0, 0), format:-2, blastBufferQueue:null
+02-03 07:35:07.370 26463 26463 D BufferQueueConsumer: [](id:675f00000000,api:0,p:-1,c:26463) connect: controlledByApp=false
+02-03 07:35:07.370 26463 26463 D BufferQueueConsumer: [VRI[MainActivity]#0(BLAST Consumer)0](id:675f00000000,api:0,p:-1,c:26463) setMaxAcquiredBufferCount: 2
+02-03 07:35:07.371 26463 26527 D BufferQueueProducer: [VRI[MainActivity]#0(BLAST Consumer)0](id:675f00000000,api:1,p:26463,c:26463) connect: api=1 producerControlledByApp=true
+02-03 07:35:07.387 26463 26463 I SurfaceControl:  setExtendedRangeBrightness sc=Surface(name=io.jojo.app.debug/io.nekohasekai.sagernet.ui.MainActivity)/@0x5cae30d,currentBufferRatio=1.0,desiredRatio=1.0
+02-03 07:35:07.395 26463 26527 I AdrenoUtils: <ReadGpuID:366>: Reading chip ID through GSL
+02-03 07:35:07.401 26463 26527 D BLASTBufferQueue: [VRI[MainActivity]#0](f:0,a:1) acquireNextBufferLocked size=1440x3168 mFrameNumber=1 applyTransaction=true mTimestamp=210251485270367(auto) mPendingTransactions.size=0 graphicBufferId=113657719554051 transform=0
+02-03 07:35:07.402 26463 26527 D VRI[MainActivity]: Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true syncBuffer=false
+02-03 07:35:07.402 26463 26527 D ExtensionsLoader: createInstance(64bit) : createExtendedFactory
+02-03 07:35:07.402 26463 26527 D ExtensionsLoader: Opened libSchedAssistExtImpl.so
+02-03 07:35:07.402 26463 26463 D VRI[MainActivity]: draw finished. seqId=0
+02-03 07:35:07.404 26463 26463 I WM-RemoteWorkManagerSer: Binding to RemoteWorkManager
+02-03 07:35:07.417 26463 26463 I Choreographer: Skipped 34 frames!  The application may be doing too much work on its main thread.
+02-03 07:35:07.437 26463 26463 D VRI[MainActivity]: onFocusEvent true
+02-03 07:35:07.438 26463 26463 W VRI[MainActivity]: handleResized, msg:, frameChanged:false, configChanged:false, displayChanged:false, attachedFrameChanged:false, compatScaleChanged:false, pendingDragResizing=false
+02-03 07:35:07.439 26463 26463 I DynamicFramerate [FRTCConfigManager]: initFrameRateConfig: init with OplusDynamicFRTCConfig
+02-03 07:35:07.439 26463 26463 I DynamicFramerate [FRTCConfigManager]: 	levelsFor120hz: [120, 60]
+02-03 07:35:07.439 26463 26463 I DynamicFramerate [FRTCConfigManager]: 	thresholdsFor120hz: [300]
+02-03 07:35:07.439 26463 26463 I DynamicFramerate [FRTCConfigManager]: 	levelsFor90hz: [90, 45]
+02-03 07:35:07.439 26463 26463 I DynamicFramerate [FRTCConfigManager]: 	thresholdsFor90hz: [214]
+02-03 07:35:07.439 26463 26463 I DynamicFramerate [FRTCConfigManager]: FRTCConfigManager: FRTC_CAPABILITY = 0, package name = io.jojo.app.debug, WINDOW_ANIMATION_SPEED_RATE = 10, SCROLL_ANIMATION_SPEED_RATE = 20, PACKAGE_ENABLE = true
+02-03 07:35:07.439 26463 26463 I DynamicFramerate [DynamicFrameRateController]: init info: mPackageName = io.jojo.app.debug, mIsEnabled = true
+02-03 07:35:07.439 26463 26463 D WM-RemoteWMgr.Connectio: Service connected
+02-03 07:35:07.447 26463 26527 D VRI[MainActivity]: Received frameCommittedCallback lastAttemptedDrawFrameNum=3 didProduceBuffer=true syncBuffer=false
+02-03 07:35:07.447 26463 26463 D VRI[MainActivity]: draw finished. seqId=0
+02-03 07:35:07.450 26463 26463 D InsetsController: hide(ime(), fromIme=false)
+02-03 07:35:07.450 26463 26463 I ImeTracker: io.jojo.app.debug:63b6739b: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+02-03 07:35:07.487 26537 26537 I Quality : Odex status:io-error-no-oat filter:run-from-apk reason:unknown location:/data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/base.apk cost:319
+02-03 07:35:07.489 26537 26537 D nativeloader: Configuring clns-9 for other apk /data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/lib/arm64:/data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/io.jojo.app.debug
+02-03 07:35:07.491 26537 26537 I jo.app.debug:bg: AssetManager2(0xb400007b6d6a0a28) locale list changing from [] to [fa]
+02-03 07:35:07.494 26537 26537 V GraphicsEnvironment: Currently set values for:
+02-03 07:35:07.494 26537 26537 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+02-03 07:35:07.494 26537 26537 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+02-03 07:35:07.494 26537 26537 V GraphicsEnvironment: io.jojo.app.debug is not listed in per-application setting
+02-03 07:35:07.494 26537 26537 V GraphicsEnvironment: ANGLE allowlist from config: 
+02-03 07:35:07.494 26537 26537 V GraphicsEnvironment: io.jojo.app.debug is not listed in ANGLE allowlist or settings, returning default
+02-03 07:35:07.494 26537 26537 V GraphicsEnvironment: Updatable production driver is not supported on the device.
+02-03 07:35:07.495 26537 26537 D ResourcesManagerExtImpl: applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:-1
+02-03 07:35:07.508 26537 26537 D nativeloader: Load /data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/lib/arm64/libgojni.so using class loader ns clns-9 (caller=/data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/base.apk!classes27.dex): ok
+02-03 07:35:07.535 26537 26575 D nativeloader: Load /data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/lib/arm64/libdatastore_shared_counter.so using class loader ns clns-9 (caller=/data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/base.apk!classes26.dex): ok
+02-03 07:35:08.329 26463 26463 I DynamicFramerate [AnimationSpeedAware]: onEventHandled: info: InputEventInfo: mX = 0, mY = 0, mAction = 0, mVsyncTime = 210252413, mIsMoving = true, mUpdated = true
+02-03 07:35:08.330 26463 26463 D OplusActivityThreadExtImpl: init method, sSupressionGC = public static native void dalvik.system.VMRuntime.SupressionGC(int,int), sDesupressionGC = public static native void dalvik.system.VMRuntime.DesupressionGC(int)
+02-03 07:35:08.330 26463 26463 E IJankManager: slideSceneEnd unknown scene 1000 mScene:-1
+02-03 07:35:08.331 26463 26463 D ViewExtract: [OplusViewExtractManager] OplusViewExtractManager init io.jojo.app.debug
+02-03 07:35:08.399 26463 26463 D OplusInputMethodManagerInternal: get inputMethodManager extension: com.android.internal.view.IInputMethodManager$Stub$Proxy@7336914
+02-03 07:35:08.400 26463 26463 I DynamicFramerate [AnimationSpeedAware]: onEventHandled: info: InputEventInfo: mX = 0, mY = 0, mAction = 1, mVsyncTime = 210252483, mIsMoving = false, mUpdated = true
+02-03 07:35:08.403 26463 26463 D ViewRootImplExtImpl: the up motion event handled by client, just return
+02-03 07:35:08.409 26463 26463 D WindowManager: Add to mViews: androidx.compose.ui.window.PopupLayout{e690857 V.E...... ......I. 0,0-0,0 #1020002 android:id/content alpha=1.0 viewInfo = },pkg= io.jojo.app.debug
+02-03 07:35:08.410 26463 26527 D skia    : setRusSupported enable 1
+02-03 07:35:08.412 26463 26463 D ViewRootImplExtImpl: onDisplayChanged -1 for VRI android.view.ViewRootImpl@be1f162
+02-03 07:35:08.415 26463 26463 E OplusBracketLog: [OplusViewMirrorManager] updateHostViewRootIfNeeded, not support android.view.ViewRootImpl@be1f162
+02-03 07:35:08.417 26463 26463 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application io.nekohasekai.sagernet.ui.MainActivity@b1f55bf hasOnBackInvokedCallBackEnabled
+02-03 07:35:08.427 26463 26463 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application io.nekohasekai.sagernet.ui.MainActivity@b1f55bf hasOnBackInvokedCallBackEnabled
+02-03 07:35:08.431 26463 26463 D VRI[پنجره بالاپر]: setLayoutParams: x = 208, y = 386
+02-03 07:35:08.434 26463 26463 D BufferQueueConsumer: [](id:675f00000001,api:0,p:-1,c:26463) connect: controlledByApp=false
+02-03 07:35:08.434 26463 26463 D BufferQueueConsumer: [VRI[پنجره بالاپر]#1(BLAST Consumer)1](id:675f00000001,api:0,p:-1,c:26463) setMaxAcquiredBufferCount: 2
+02-03 07:35:08.435 26463 26527 D BufferQueueProducer: [VRI[پنجره بالاپر]#1(BLAST Consumer)1](id:675f00000001,api:1,p:26463,c:26463) connect: api=1 producerControlledByApp=true
+02-03 07:35:08.438 26463 26463 I SurfaceControl:  setExtendedRangeBrightness sc=Surface(name=پنجره بالاپر)/@0x14c6cb5,currentBufferRatio=1.0,desiredRatio=1.0
+02-03 07:35:08.440 26463 26527 D BLASTBufferQueue: [VRI[پنجره بالاپر]#1](f:0,a:1) acquireNextBufferLocked size=720x960 mFrameNumber=1 applyTransaction=true mTimestamp=210252524738335(auto) mPendingTransactions.size=0 graphicBufferId=113657719554055 transform=0
+02-03 07:35:08.441 26463 26527 D VRI[پنجره بالاپر]: Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true syncBuffer=false
+02-03 07:35:08.441 26463 26463 D VRI[پنجره بالاپر]: draw finished. seqId=0
+02-03 07:35:08.446 26463 26463 I SurfaceControl:  setExtendedRangeBrightness sc=Surface(name=پنجره بالاپر)/@0x14c6cb5,currentBufferRatio=1.0,desiredRatio=1.0
+02-03 07:35:08.447 26463 26463 D OplusSystemUINavigationGesture: packageName: io.jojo.app.debug, systemGestureExclusionChanged region=SkRegion((0,0,592,832)) list:
+02-03 07:35:08.447 26463 26463 D OplusSystemUINavigationGesture: systemGestureExclusionChanged rect=Rect(0, 0 - 592, 832)
+02-03 07:35:08.448 26463 26463 D VRI[MainActivity]: onFocusEvent false
+02-03 07:35:08.448 26463 26538 D OplusScrollToTopManager: io.jojo.app.debug/io.nekohasekai.sagernet.ui.MainActivity,This com.android.internal.policy.DecorView{9c76731 V.E...... R....... 0,0-1440,3168 aid=0 alpha=1.0 viewInfo = }[MainActivity] change focus to true
+02-03 07:35:08.456 26463 26463 I SurfaceControl:  setExtendedRangeBrightness sc=Surface(name=پنجره بالاپر)/@0x14c6cb5,currentBufferRatio=1.0,desiredRatio=1.0
+02-03 07:35:08.460 26463 26527 D VRI[پنجره بالاپر]: Received frameCommittedCallback lastAttemptedDrawFrameNum=3 didProduceBuffer=true syncBuffer=false
+02-03 07:35:08.460 26463 26463 D VRI[پنجره بالاپر]: draw finished. seqId=0
+02-03 07:35:08.461 26463 26463 D VRI[پنجره بالاپر]: onFocusEvent true
+02-03 07:35:08.462 26463 26463 D InsetsController: hide(ime(), fromIme=false)
+02-03 07:35:08.462 26463 26463 I ImeTracker: io.jojo.app.debug:e4c46b2e: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+02-03 07:35:08.929 26463 26463 I DynamicFramerate [AnimationSpeedAware]: onEventHandled: info: InputEventInfo: mX = 0, mY = 0, mAction = 0, mVsyncTime = 210253012, mIsMoving = true, mUpdated = true
+02-03 07:35:08.929 26463 26463 E IJankManager: slideSceneEnd unknown scene 1000 mScene:-1
+02-03 07:35:08.991 26463 26463 I DynamicFramerate [AnimationSpeedAware]: onEventHandled: info: InputEventInfo: mX = 0, mY = 0, mAction = 1, mVsyncTime = 210253075, mIsMoving = false, mUpdated = true
+02-03 07:35:08.992 26463 26463 D ViewRootImplExtImpl: the up motion event handled by client, just return
+02-03 07:35:09.005 26463 26463 D WindowManager: Add to mViews: androidx.compose.ui.window.PopupLayout{ce8f7b9 V.E...... ......I. 0,0-0,0 #1020002 android:id/content alpha=1.0 viewInfo = },pkg= io.jojo.app.debug
+02-03 07:35:09.006 26463 26527 D skia    : setRusSupported enable 1
+02-03 07:35:09.009 26463 26463 D ViewRootImplExtImpl: onDisplayChanged -1 for VRI android.view.ViewRootImpl@2fc29ac
+02-03 07:35:09.014 26463 26463 E OplusBracketLog: [OplusViewMirrorManager] updateHostViewRootIfNeeded, not support android.view.ViewRootImpl@2fc29ac
+02-03 07:35:09.015 26463 26463 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application io.nekohasekai.sagernet.ui.MainActivity@b1f55bf hasOnBackInvokedCallBackEnabled
+02-03 07:35:09.050 26463 26463 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application io.nekohasekai.sagernet.ui.MainActivity@b1f55bf hasOnBackInvokedCallBackEnabled
+02-03 07:35:09.063 26463 26463 D VRI[پنجره بالاپر]: setLayoutParams: x = 208, y = 0
+02-03 07:35:09.068 26463 26463 D BufferQueueConsumer: [](id:675f00000002,api:0,p:-1,c:26463) connect: controlledByApp=false
+02-03 07:35:09.068 26463 26463 D BufferQueueConsumer: [VRI[پنجره بالاپر]#2(BLAST Consumer)2](id:675f00000002,api:0,p:-1,c:26463) setMaxAcquiredBufferCount: 2
+02-03 07:35:09.069 26463 26527 D BufferQueueProducer: [VRI[پنجره بالاپر]#2(BLAST Consumer)2](id:675f00000002,api:1,p:26463,c:26463) connect: api=1 producerControlledByApp=true
+02-03 07:35:09.078 26463 26463 I SurfaceControl:  setExtendedRangeBrightness sc=Surface(name=پنجره بالاپر)/@0xf791146,currentBufferRatio=1.0,desiredRatio=1.0
+02-03 07:35:09.082 26463 26527 D BLASTBufferQueue: [VRI[پنجره بالاپر]#2](f:0,a:1) acquireNextBufferLocked size=580x3136 mFrameNumber=1 applyTransaction=true mTimestamp=210253166364325(auto) mPendingTransactions.size=0 graphicBufferId=113657719554059 transform=0
+02-03 07:35:09.082 26463 26527 D VRI[پنجره بالاپر]: Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true syncBuffer=false
+02-03 07:35:09.083 26463 26463 D VRI[پنجره بالاپر]: draw finished. seqId=0
+02-03 07:35:09.089 26463 26463 I SurfaceControl:  setExtendedRangeBrightness sc=Surface(name=پنجره بالاپر)/@0xf791146,currentBufferRatio=1.0,desiredRatio=1.0
+02-03 07:35:09.091 26463 26463 D OplusSystemUINavigationGesture: packageName: io.jojo.app.debug, systemGestureExclusionChanged region=SkRegion((0,0,452,3008)) list:
+02-03 07:35:09.091 26463 26463 D OplusSystemUINavigationGesture: systemGestureExclusionChanged rect=Rect(0, 0 - 452, 3008)
+02-03 07:35:09.091 26463 26463 D VRI[پنجره بالاپر]: onFocusEvent false
+02-03 07:35:09.099 26463 26463 I SurfaceControl:  setExtendedRangeBrightness sc=Surface(name=پنجره بالاپر)/@0xf791146,currentBufferRatio=1.0,desiredRatio=1.0
+02-03 07:35:09.103 26463 26527 D VRI[پنجره بالاپر]: Received frameCommittedCallback lastAttemptedDrawFrameNum=3 didProduceBuffer=true syncBuffer=false
+02-03 07:35:09.104 26463 26463 D VRI[پنجره بالاپر]: draw finished. seqId=0
+02-03 07:35:09.105 26463 26463 D VRI[پنجره بالاپر]: onFocusEvent true
+02-03 07:35:09.111 26463 26463 D InsetsController: hide(ime(), fromIme=false)
+02-03 07:35:09.111 26463 26463 I ImeTracker: io.jojo.app.debug:49697608: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+02-03 07:35:09.220 26463 26463 D OplusScrollToTopManager: پنجره بالاپر,window dying
+02-03 07:35:09.220 26463 26463 D OplusScrollToTopManager: پنجره بالاپر,unregisterSystemUIBroadcastReceiver 
+02-03 07:35:09.220 26463 26463 D OplusScrollToTopManager: پنجره بالاپر, unregisterSystemUIBroadcastReceiver failed java.lang.IllegalArgumentException: Receiver not registered: android.view.OplusScrollToTopManager$2@4b0e9ad
+02-03 07:35:09.221 26463 26463 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=androidx.compose.ui.window.Api33Impl$$ExternalSyntheticLambda0@aa3dfe5
+02-03 07:35:09.222 26463 26463 D HWUI    : RenderProxy::destroy: this=0xb400007aaa41ef00, mContext=0xb4000079b7e99f40
+02-03 07:35:09.222 26463 26527 D HWUI    : SkiaVulkanPipeline::setSurface: this=0xb400007a81393fc0, surface=NULL
+02-03 07:35:09.222 26463 26527 D BufferQueueProducer: [VRI[پنجره بالاپر]#1(BLAST Consumer)1](id:675f00000001,api:1,p:26463,c:26463) disconnect: api 1
+02-03 07:35:09.222 26463 26527 D HWUI    : endAllActiveAnimators on 0xb400007aaa4a2c00 (UnprojectedRipple) with handle 0xb4000079b856e6c0
+02-03 07:35:09.223 26463 26463 D BLASTBufferQueue: [VRI[پنجره بالاپر]#1](f:0,a:1) destructor()
+02-03 07:35:09.223 26463 26463 D BufferQueueConsumer: [VRI[پنجره بالاپر]#1(BLAST Consumer)1](id:675f00000001,api:0,p:-1,c:26463) disconnect
+02-03 07:35:09.463 26463 26538 D OplusScrollToTopManager: io.jojo.app.debug/io.nekohasekai.sagernet.ui.MainActivity,This com.android.internal.policy.DecorView{9c76731 V.E...... R....... 0,0-1440,3168 aid=0 alpha=1.0 viewInfo = }[MainActivity] change focus to false
+02-03 07:35:09.724 26463 26463 I DynamicFramerate [AnimationSpeedAware]: onEventHandled: info: InputEventInfo: mX = 0, mY = 0, mAction = 0, mVsyncTime = 210253808, mIsMoving = true, mUpdated = true
+02-03 07:35:09.724 26463 26463 E IJankManager: slideSceneEnd unknown scene 1000 mScene:-1
+02-03 07:35:09.790 26463 26463 I .jojo.app.debug: hiddenapi: Accessing hidden method Landroid/view/ViewTreeObserver;->dispatchOnScrollChanged()V (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/compose/ui/platform/AndroidComposeView$Companion; (domain=app) using reflection: allowed
+02-03 07:35:09.791 26463 26463 I SurfaceControl:  setExtendedRangeBrightness sc=Surface(name=پنجره بالاپر)/@0xf791146,currentBufferRatio=1.0,desiredRatio=1.0
+02-03 07:35:09.833 26463 26463 I DynamicFramerate [AnimationSpeedAware]: onEventHandled: info: InputEventInfo: mX = 0, mY = 0, mAction = 1, mVsyncTime = 210253917, mIsMoving = false, mUpdated = true
+02-03 07:35:09.834 26463 26463 D ViewRootImplExtImpl: the up motion event handled by client, just return
+02-03 07:35:10.107 26463 26538 D OplusScrollToTopManager: پنجره بالاپر,This androidx.compose.ui.window.PopupLayout{ce8f7b9 V.E...... .......D 0,0-452,3008 #1020002 android:id/content aid=1073741828 alpha=1.0 viewInfo = } change focus to true
+02-03 07:35:10.634 26463 26463 I DynamicFramerate [AnimationSpeedAware]: onEventHandled: info: InputEventInfo: mX = 0, mY = 0, mAction = 0, mVsyncTime = 210254718, mIsMoving = true, mUpdated = true
+02-03 07:35:10.681 26463 26463 I DynamicFramerate [AnimationSpeedAware]: onEventHandled: info: InputEventInfo: mX = 0, mY = 0, mAction = 1, mVsyncTime = 210254765, mIsMoving = false, mUpdated = true
+02-03 07:35:10.689 26463 26463 D ViewRootImplExtImpl: the up motion event handled by client, just return
+02-03 07:35:10.695 26463 26463 I SurfaceControl:  setExtendedRangeBrightness sc=Surface(name=پنجره بالاپر)/@0xf791146,currentBufferRatio=1.0,desiredRatio=1.0
+02-03 07:35:10.703 26463 26463 V Configuration: Updating configuration, locales updated from [fa,en_US] to [en_US,fa]
+02-03 07:35:10.703 26463 26463 V Resources: Updating configuration with selected locales [en-US]
+02-03 07:35:10.704 26463 26463 D ResourcesManagerExtImpl: applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:0
+02-03 07:35:10.710 26463 26463 E OplusPredictiveBackController:  NoSuchMethodException 
+02-03 07:35:10.710 26463 26463 E OplusPredictiveBackController:  NoSuchMethodException 
+02-03 07:35:10.710 26463 26463 E OplusPredictiveBackController:  NoSuchMethodException 
+02-03 07:35:10.710 26463 26463 E OplusPredictiveBackController:  NoSuchMethodException 
+02-03 07:35:10.710 26463 26463 E OplusPredictiveBackController:  NoSuchMethodException 
+02-03 07:35:10.710 26463 26463 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application io.nekohasekai.sagernet.ui.profile.ProxySetSettingsActivity@9b34d31 hasOnBackInvokedCallBackEnabled
+02-03 07:35:10.711 26463 26463 D OplusPredictiveBackController: initPredictiveBackConfig for io.nekohasekai.sagernet.ui.profile.ProxySetSettingsActivity@9b34d31 initPredictiveBackConfig mShouldInterceptKeyEvent false
+02-03 07:35:10.711 26463 26463 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application io.nekohasekai.sagernet.ui.profile.ProxySetSettingsActivity@9b34d31 hasOnBackInvokedCallBackEnabled
+02-03 07:35:10.713 26463 26463 D ActivityThread: ComponentInfo{io.jojo.app.debug/io.nekohasekai.sagernet.ui.profile.ProxySetSettingsActivity} checkFinished=false 2
+02-03 07:35:10.713 26463 26463 D ResourcesManagerExtImpl: applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:0
+02-03 07:35:10.714 26463 26463 D WindowManager: Add to mViews: com.android.internal.policy.DecorView{3f11aab I.E...... R.....I. 0,0-0,0 alpha=1.0 viewInfo = }[ProxySetSettingsActivity],pkg= io.jojo.app.debug
+02-03 07:35:10.714 26463 26527 D skia    : setRusSupported enable 1
+02-03 07:35:10.715 26463 26463 D ViewRootImplExtImpl: onDisplayChanged -1 for VRI android.view.ViewRootImpl@59096c6
+02-03 07:35:10.715 26463 26463 D VRI[پنجره بالاپر]: onFocusEvent false
+02-03 07:35:10.715 26463 26463 D ResourcesManagerExtImpl: applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:0
+02-03 07:35:10.717 26463 26463 E OplusBracketLog: [OplusViewMirrorManager] updateHostViewRootIfNeeded, not support android.view.ViewRootImpl@59096c6
+02-03 07:35:10.719 26463 26463 D Vibrator: SystemVibrator Created
+02-03 07:35:10.726 26463 26463 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application io.nekohasekai.sagernet.ui.profile.ProxySetSettingsActivity@9b34d31 hasOnBackInvokedCallBackEnabled
+02-03 07:35:10.746 26463 26463 I .jojo.app.debug: hiddenapi: Accessing hidden method Ljava/net/Socket;->getFileDescriptor$()Ljava/io/FileDescriptor; (runtime_flags=CorePlatformApi, domain=core-platform, api=unsupported,core-platform-api) from Lio/nekohasekai/sagernet/ktx/UtilsKt; (domain=app) using reflection: allowed
+02-03 07:35:10.746 26463 26463 I .jojo.app.debug: hiddenapi: Accessing hidden method Ljava/io/FileDescriptor;->getInt$()I (runtime_flags=CorePlatformApi, domain=core-platform, api=unsupported,core-platform-api) from Lio/nekohasekai/sagernet/ktx/UtilsKt; (domain=app) using reflection: allowed
+02-03 07:35:10.766 26463 26463 D ViewRootImplExtImpl: wrapConfigInfoIntoFlags rotation=0, smallestScreenWidthDp=0, residentWS=false, scenario=0, bounds=Rect(0, 0 - 1440, 3168), relayoutAsync=false, flags=0, newFlags=1660944384, title=io.jojo.app.debug/io.nekohasekai.sagernet.ui.profile.ProxySetSettingsActivity
+02-03 07:35:10.770 26463 26463 D VRI[ProxySetSettingsActivity]: relayoutWindow result, sizeChanged:true, surfaceControlChanged:true, transformHintChanged:false, mSurfaceSize:Point(1440, 3168), mLastSurfaceSize:Point(0, 0), mWidth:-1, mHeight:-1, requestedWidth:1440, requestedHeight:3168, transformHint:0, installOrientation:0, displayRotation:0, isSurfaceValid:true, attr.flag:-2122252032, tmpFrames:ClientWindowFrames{frame=[0,0][1440,3168] display=[0,0][1440,3168] parentFrame=[0,0][0,0]}, relayoutAsync:false, mSyncSeqId:0
+02-03 07:35:10.770 26463 26463 W VRI[ProxySetSettingsActivity]: updateBlastSurfaceIfNeeded, surfaceSize:Point(1440, 3168), lastSurfaceSize:Point(0, 0), format:-2, blastBufferQueue:null
+02-03 07:35:10.770 26463 26463 D BufferQueueConsumer: [](id:675f00000003,api:0,p:-1,c:26463) connect: controlledByApp=false
+02-03 07:35:10.770 26463 26463 D BufferQueueConsumer: [VRI[ProxySetSettingsActivity]#3(BLAST Consumer)3](id:675f00000003,api:0,p:-1,c:26463) setMaxAcquiredBufferCount: 2
+02-03 07:35:10.771 26463 26527 D BufferQueueProducer: [VRI[ProxySetSettingsActivity]#3(BLAST Consumer)3](id:675f00000003,api:1,p:26463,c:26463) connect: api=1 producerControlledByApp=true
+02-03 07:35:10.779 26463 26463 I SurfaceControl:  setExtendedRangeBrightness sc=Surface(name=io.jojo.app.debug/io.nekohasekai.sagernet.ui.profile.ProxySetSettingsActivity)/@0xb12fea4,currentBufferRatio=1.0,desiredRatio=1.0
+02-03 07:35:10.786 26463 26527 D BLASTBufferQueue: [VRI[ProxySetSettingsActivity]#3](f:0,a:1) acquireNextBufferLocked size=1440x3168 mFrameNumber=1 applyTransaction=true mTimestamp=210254870539480(auto) mPendingTransactions.size=0 graphicBufferId=113657719554063 transform=0
+02-03 07:35:10.786 26463 26527 D VRI[ProxySetSettingsActivity]: Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true syncBuffer=false
+02-03 07:35:10.787 26463 26463 D VRI[ProxySetSettingsActivity]: draw finished. seqId=0
+02-03 07:35:10.800 26463 26463 W VRI[ProxySetSettingsActivity]: handleResized, msg:, frameChanged:false, configChanged:false, displayChanged:false, attachedFrameChanged:false, compatScaleChanged:false, pendingDragResizing=false
+02-03 07:35:10.803 26463 26463 D VRI[ProxySetSettingsActivity]: onFocusEvent true
+02-03 07:35:10.804 26463 26463 D InsetsController: hide(ime(), fromIme=false)
+02-03 07:35:10.805 26463 26463 I ImeTracker: io.jojo.app.debug:88c37cce: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+02-03 07:35:10.811 26463 26527 D VRI[ProxySetSettingsActivity]: Received frameCommittedCallback lastAttemptedDrawFrameNum=3 didProduceBuffer=false syncBuffer=false
+02-03 07:35:10.811 26463 26527 D VRI[ProxySetSettingsActivity]: draw finished. seqId=0
+02-03 07:35:10.833 26463 26463 D OplusScrollToTopManager: پنجره بالاپر,window dying
+02-03 07:35:10.833 26463 26463 D OplusScrollToTopManager: پنجره بالاپر,unregisterSystemUIBroadcastReceiver 
+02-03 07:35:10.833 26463 26463 D OplusScrollToTopManager: پنجره بالاپر, unregisterSystemUIBroadcastReceiver failed java.lang.IllegalArgumentException: Receiver not registered: android.view.OplusScrollToTopManager$2@a0e3edf
+02-03 07:35:10.833 26463 26463 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=androidx.compose.ui.window.Api33Impl$$ExternalSyntheticLambda0@3e9ec62
+02-03 07:35:10.833 26463 26463 D HWUI    : RenderProxy::destroy: this=0xb400007aaa420100, mContext=0xb4000079b7fec780
+02-03 07:35:10.833 26463 26527 D HWUI    : SkiaVulkanPipeline::setSurface: this=0xb400007a8127d3c0, surface=NULL
+02-03 07:35:10.834 26463 26527 D BufferQueueProducer: [VRI[پنجره بالاپر]#2(BLAST Consumer)2](id:675f00000002,api:1,p:26463,c:26463) disconnect: api 1
+02-03 07:35:10.834 26463 26527 D HWUI    : endAllActiveAnimators on 0xb400007aaa505a00 (UnprojectedRipple) with handle 0xb4000079b859e220
+02-03 07:35:10.834 26463 26463 D BLASTBufferQueue: [VRI[پنجره بالاپر]#2](f:0,a:1) destructor()
+02-03 07:35:10.834 26463 26463 D BufferQueueConsumer: [VRI[پنجره بالاپر]#2(BLAST Consumer)2](id:675f00000002,api:0,p:-1,c:26463) disconnect
+02-03 07:35:11.154 26463 26622 D VRI[MainActivity]: dispatchAppVisibility visible:false mUpcomingWindowFocus:false
+02-03 07:35:11.154 26463 26497 D VRI[پنجره بالاپر]: dispatchAppVisibility visible:false mUpcomingWindowFocus:false
+02-03 07:35:11.154 26463 26463 D VRI[MainActivity]: visibilityChanged oldVisibility=true newVisibility=false
+02-03 07:35:11.162 26463 26463 D HWUI    : RenderProxy::destroy: this=0xb400007b6d7d3600, mContext=0xb400007a813b1200
+02-03 07:35:11.162 26463 26527 D HWUI    : SkiaVulkanPipeline::setSurface: this=0xb400007b11688e80, surface=NULL
+02-03 07:35:11.163 26463 26527 D BufferQueueProducer: [VRI[MainActivity]#0(BLAST Consumer)0](id:675f00000000,api:1,p:26463,c:26463) disconnect: api 1
+02-03 07:35:11.163 26463 26463 D ViewRootImplExtImpl: wrapConfigInfoIntoFlags rotation=0, smallestScreenWidthDp=360, residentWS=false, scenario=0, bounds=Rect(0, 0 - 1440, 3168), relayoutAsync=false, flags=0, newFlags=1660955904, title=io.jojo.app.debug/io.nekohasekai.sagernet.ui.MainActivity
+02-03 07:35:11.166 26463 26463 D VRI[MainActivity]: relayoutWindow result, sizeChanged:false, surfaceControlChanged:true, transformHintChanged:false, mSurfaceSize:Point(1440, 3168), mLastSurfaceSize:Point(1440, 3168), mWidth:1440, mHeight:3168, requestedWidth:1440, requestedHeight:3168, transformHint:0, installOrientation:0, displayRotation:0, isSurfaceValid:false, attr.flag:-2122252032, tmpFrames:ClientWindowFrames{frame=[0,0][1440,3168] display=[0,0][1440,3168] parentFrame=[0,0][0,0]}, relayoutAsync:false, mSyncSeqId:0
+02-03 07:35:11.166 26463 26463 D BLASTBufferQueue: [VRI[MainActivity]#0](f:0,a:1) destructor()
+02-03 07:35:11.166 26463 26463 D BufferQueueConsumer: [VRI[MainActivity]#0(BLAST Consumer)0](id:675f00000000,api:0,p:-1,c:26463) disconnect
+02-03 07:35:11.169 26463 26463 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=androidx.navigationevent.OnBackInvokedInput$createOnBackAnimationCallback$1@93283ba
+02-03 07:35:11.169 26463 26463 D VRI[MainActivity]: setWindowStopped stopped:true
+02-03 07:35:11.808 26463 26538 D OplusScrollToTopManager: io.jojo.app.debug/io.nekohasekai.sagernet.ui.profile.ProxySetSettingsActivity,This com.android.internal.policy.DecorView{3f11aab V.E...... R....... 0,0-1440,3168 aid=1 alpha=1.0 viewInfo = }[ProxySetSettingsActivity] change focus to true
+02-03 07:35:11.976 26463 26463 I DynamicFramerate [AnimationSpeedAware]: onEventHandled: info: InputEventInfo: mX = 0, mY = 0, mAction = 0, mVsyncTime = 210256060, mIsMoving = true, mUpdated = true
+02-03 07:35:11.976 26463 26463 E IJankManager: slideSceneEnd unknown scene 1000 mScene:-1
+02-03 07:35:12.000 26463 26463 I DynamicFramerate [AnimationSpeedAware]: onEventHandled: info: InputEventInfo: mX = 0, mY = 0, mAction = 1, mVsyncTime = 210256083, mIsMoving = false, mUpdated = true
+02-03 07:35:12.001 26463 26463 D ViewRootImplExtImpl: the up motion event handled by client, just return
+02-03 07:35:12.015 26463 26463 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application io.nekohasekai.sagernet.ui.profile.ProxySetSettingsActivity@9b34d31 hasOnBackInvokedCallBackEnabled
+02-03 07:35:12.015 26463 26463 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application io.nekohasekai.sagernet.ui.profile.ProxySetSettingsActivity@9b34d31 hasOnBackInvokedCallBackEnabled
+02-03 07:35:12.379 26463 26463 I DynamicFramerate [AnimationSpeedAware]: onEventHandled: info: InputEventInfo: mX = 0, mY = 0, mAction = 0, mVsyncTime = 210256462, mIsMoving = true, mUpdated = true
+02-03 07:35:12.379 26463 26463 E IJankManager: slideSceneEnd unknown scene 1000 mScene:-1
+02-03 07:35:12.426 26463 26463 I DynamicFramerate [AnimationSpeedAware]: onEventHandled: info: InputEventInfo: mX = 0, mY = 0, mAction = 1, mVsyncTime = 210256510, mIsMoving = false, mUpdated = true
+02-03 07:35:12.428 26463 26463 D ActivityClient: activity finished by caller: android.app.Activity.finish:7644 android.app.Activity.finish:7661 io.nekohasekai.sagernet.ui.profile.ProfileSettingsActivity.saveAndExit:314 io.nekohasekai.sagernet.ui.profile.ProfileSettingsActivity$onCreate$1$3$1$3$2$1.invoke:149 io.nekohasekai.sagernet.ui.profile.ProfileSettingsActivity$onCreate$1$3$1$3$2$1.invoke:149 androidx.compose.foundation.ClickableNode.onPointerEvent-H0pRuoY:935 androidx.compose.ui.input.pointer.Node.dispatchMainEventPass:446 androidx.compose.ui.input.pointer.Node.dispatchMainEventPass:432 androidx.compose.ui.input.pointer.Node.dispatchMainEventPass:432 androidx.compose.ui.input.pointer.Node.dispatchMainEventPass:432 
+02-03 07:35:12.432 26463 26463 D ViewRootImplExtImpl: the up motion event handled by client, just return
+02-03 07:35:12.435 26463 26622 D VRI[MainActivity]: dispatchAppVisibility visible:true mUpcomingWindowFocus:false
+02-03 07:35:12.439 26463 26463 D VRI[MainActivity]: setWindowStopped stopped:false
+02-03 07:35:12.439 26463 26463 D ViewRootImpl: Skipping stats log for color mode
+02-03 07:35:12.439 26463 26463 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application io.nekohasekai.sagernet.ui.MainActivity@b1f55bf hasOnBackInvokedCallBackEnabled
+02-03 07:35:12.439 26463 26463 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application io.nekohasekai.sagernet.ui.MainActivity@b1f55bf hasOnBackInvokedCallBackEnabled
+02-03 07:35:12.441 26463 26463 D ActivityThread: ComponentInfo{io.jojo.app.debug/io.nekohasekai.sagernet.ui.MainActivity} checkFinished=false 2
+02-03 07:35:12.441 26463 26463 D ResourcesManagerExtImpl: applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:0
+02-03 07:35:12.446 26463 26463 D ViewRootImplExtImpl: wrapConfigInfoIntoFlags rotation=0, smallestScreenWidthDp=360, residentWS=false, scenario=0, bounds=Rect(0, 0 - 1440, 3168), relayoutAsync=false, flags=0, newFlags=1660955904, title=io.jojo.app.debug/io.nekohasekai.sagernet.ui.MainActivity
+02-03 07:35:12.449 26463 26463 D VRI[MainActivity]: relayoutWindow result, sizeChanged:false, surfaceControlChanged:true, transformHintChanged:false, mSurfaceSize:Point(1440, 3168), mLastSurfaceSize:Point(1440, 3168), mWidth:1440, mHeight:3168, requestedWidth:1440, requestedHeight:3168, transformHint:0, installOrientation:0, displayRotation:0, isSurfaceValid:true, attr.flag:-2122252032, tmpFrames:ClientWindowFrames{frame=[0,0][1440,3168] display=[0,0][1440,3168] parentFrame=[0,0][0,0]}, relayoutAsync:false, mSyncSeqId:0
+02-03 07:35:12.449 26463 26463 W VRI[MainActivity]: updateBlastSurfaceIfNeeded, surfaceSize:Point(1440, 3168), lastSurfaceSize:Point(1440, 3168), format:-2, blastBufferQueue:null
+02-03 07:35:12.449 26463 26463 D BufferQueueConsumer: [](id:675f00000004,api:0,p:-1,c:26463) connect: controlledByApp=false
+02-03 07:35:12.449 26463 26463 D BufferQueueConsumer: [VRI[MainActivity]#4(BLAST Consumer)4](id:675f00000004,api:0,p:-1,c:26463) setMaxAcquiredBufferCount: 2
+02-03 07:35:12.450 26463 26527 D BufferQueueProducer: [VRI[MainActivity]#4(BLAST Consumer)4](id:675f00000004,api:1,p:26463,c:26463) connect: api=1 producerControlledByApp=true
+02-03 07:35:12.450 26463 26463 I SurfaceControl:  setExtendedRangeBrightness sc=Surface(name=io.jojo.app.debug/io.nekohasekai.sagernet.ui.MainActivity)/@0x5cae30d,currentBufferRatio=1.0,desiredRatio=1.0
+02-03 07:35:12.454 26463 26587 E OplusExceptionHelper: [OPLUS]FATAL EXCEPTION: DefaultDispatcher-worker-10 @coroutine#321
+02-03 07:35:12.454 26463 26587 E OplusExceptionHelper: Process: io.jojo.app.debug, PID: 26463
+02-03 07:35:12.454 26463 26587 E OplusExceptionHelper: java.lang.NullPointerException
+02-03 07:35:12.454 26463 26587 E OplusExceptionHelper: 	at io.nekohasekai.sagernet.database.DataStore.selectedGroupForImport(DataStore.kt:90)
+02-03 07:35:12.454 26463 26587 E OplusExceptionHelper: 	at io.nekohasekai.sagernet.ui.profile.ProfileSettingsViewModel$save$1.invokeSuspend(ProfileSettingsViewModel.kt:98)
+02-03 07:35:12.454 26463 26587 E OplusExceptionHelper: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+02-03 07:35:12.454 26463 26587 E OplusExceptionHelper: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+02-03 07:35:12.454 26463 26587 E OplusExceptionHelper: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:124)
+02-03 07:35:12.454 26463 26587 E OplusExceptionHelper: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+02-03 07:35:12.454 26463 26587 E OplusExceptionHelper: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:586)
+02-03 07:35:12.454 26463 26587 E OplusExceptionHelper: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:820)
+02-03 07:35:12.454 26463 26587 E OplusExceptionHelper: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:717)
+02-03 07:35:12.454 26463 26587 E OplusExceptionHelper: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
+02-03 07:35:12.454 26463 26587 E OplusExceptionHelper: 	Suppressed: kotlinx.coroutines.internal.DiagnosticCoroutineContextException: [CoroutineId(321), "coroutine#321":StandaloneCoroutine{Cancelling}@92278ee, Dispatchers.IO]
+02-03 07:35:12.454 26463 26587 E Thread[DefaultDispatcher-worker-10 @coroutine#321,5,main]: java.lang.NullPointerException
+02-03 07:35:12.454 26463 26587 E Thread[DefaultDispatcher-worker-10 @coroutine#321,5,main]: 	at io.nekohasekai.sagernet.database.DataStore.selectedGroupForImport(DataStore.kt:90)
+02-03 07:35:12.454 26463 26587 E Thread[DefaultDispatcher-worker-10 @coroutine#321,5,main]: 	at io.nekohasekai.sagernet.ui.profile.ProfileSettingsViewModel$save$1.invokeSuspend(ProfileSettingsViewModel.kt:98)
+02-03 07:35:12.454 26463 26587 E Thread[DefaultDispatcher-worker-10 @coroutine#321,5,main]: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+02-03 07:35:12.454 26463 26587 E Thread[DefaultDispatcher-worker-10 @coroutine#321,5,main]: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+02-03 07:35:12.454 26463 26587 E Thread[DefaultDispatcher-worker-10 @coroutine#321,5,main]: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:124)
+02-03 07:35:12.454 26463 26587 E Thread[DefaultDispatcher-worker-10 @coroutine#321,5,main]: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+02-03 07:35:12.454 26463 26587 E Thread[DefaultDispatcher-worker-10 @coroutine#321,5,main]: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:586)
+02-03 07:35:12.454 26463 26587 E Thread[DefaultDispatcher-worker-10 @coroutine#321,5,main]: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:820)
+02-03 07:35:12.454 26463 26587 E Thread[DefaultDispatcher-worker-10 @coroutine#321,5,main]: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:717)
+02-03 07:35:12.454 26463 26587 E Thread[DefaultDispatcher-worker-10 @coroutine#321,5,main]: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
+02-03 07:35:12.454 26463 26587 E Thread[DefaultDispatcher-worker-10 @coroutine#321,5,main]: 	Suppressed: kotlinx.coroutines.internal.DiagnosticCoroutineContextException: [CoroutineId(321), "coroutine#321":StandaloneCoroutine{Cancelling}@92278ee, Dispatchers.IO]
+02-03 07:35:12.455 26463 26587 E CrashHandler: Thread[DefaultDispatcher-worker-10 @coroutine#321,5,main]
+02-03 07:35:12.455 26463 26527 D BLASTBufferQueue: [VRI[MainActivity]#4](f:0,a:1) acquireNextBufferLocked size=1440x3168 mFrameNumber=1 applyTransaction=true mTimestamp=210256539362084(auto) mPendingTransactions.size=0 graphicBufferId=113657719554066 transform=0
+02-03 07:35:12.455 26463 26527 D VRI[MainActivity]: Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true syncBuffer=false
+02-03 07:35:12.455 26463 26587 E CrashHandler: java.lang.NullPointerException
+02-03 07:35:12.455 26463 26587 E CrashHandler: 	at io.nekohasekai.sagernet.database.DataStore.selectedGroupForImport(DataStore.kt:90)
+02-03 07:35:12.455 26463 26587 E CrashHandler: 	at io.nekohasekai.sagernet.ui.profile.ProfileSettingsViewModel$save$1.invokeSuspend(ProfileSettingsViewModel.kt:98)
+02-03 07:35:12.455 26463 26587 E CrashHandler: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+02-03 07:35:12.455 26463 26587 E CrashHandler: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+02-03 07:35:12.455 26463 26587 E CrashHandler: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:124)
+02-03 07:35:12.455 26463 26587 E CrashHandler: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+02-03 07:35:12.455 26463 26587 E CrashHandler: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:586)
+02-03 07:35:12.455 26463 26587 E CrashHandler: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:820)
+02-03 07:35:12.455 26463 26587 E CrashHandler: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:717)
+02-03 07:35:12.455 26463 26587 E CrashHandler: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
+02-03 07:35:12.455 26463 26587 E CrashHandler: 	Suppressed: kotlinx.coroutines.internal.DiagnosticCoroutineContextException: [CoroutineId(321), "coroutine#321":StandaloneCoroutine{Cancelling}@92278ee, Dispatchers.IO]
+02-03 07:35:12.455 26463 26463 D VRI[MainActivity]: draw finished. seqId=0
+02-03 07:35:12.456 26463 26463 D VRI[ProxySetSettingsActivity]: onFocusEvent false
+02-03 07:35:12.472 26463 26463 D VRI[MainActivity]: onFocusEvent true
+02-03 07:35:12.481 26463 26463 D InsetsController: hide(ime(), fromIme=false)
+02-03 07:35:12.481 26463 26463 I ImeTracker: io.jojo.app.debug:66ffa670: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+02-03 07:35:12.486 26683 26683 I p.debug:phoenix: isSwordfishLaunchAppEnabled_ 1 isSwordfishInstallAppEnabled_ 1
+02-03 07:35:12.486 26683 26683 I p.debug:phoenix: Late-enabling -Xcheck:jni
+02-03 07:35:12.511 26683 26683 E p.debug:phoenix: Unknown bits set in runtime_flags: 0x40000000
+02-03 07:35:12.511 26683 26683 I p.debug:phoenix: Using CollectorTypeCMC GC.
+02-03 07:35:12.516 26683 26683 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+02-03 07:35:12.518 26683 26683 W libc    : Access denied finding property "persist.vendor.sys.activitylog"
+02-03 07:35:12.518 26683 26683 I OneTrace: Mark active for pid=26683? true
+02-03 07:35:12.518 26683 26683 D cutils-dev: otrace_set_tracing_enabled? true tag:0
+02-03 07:35:12.518 26683 26683 D cutils-dev: properties changed in otrace_seq_number_changed!
+02-03 07:35:12.529 26683 26699 D OplusActivityManager: get AMS extension: android.os.BinderProxy@cf639e6
+02-03 07:35:12.530 26683 26699 D SurfaceSyncGroup: preCreateSurfaceSyncGroupTimerThread
+02-03 07:35:12.531 26683 26683 D CompactWindowAppManager: initCompactApplicationInfo CompactMode: , NormalMode: 
+02-03 07:35:12.532 26683 26683 V Configuration: Updating configuration, locales updated from [] to [en_US]
+02-03 07:35:12.533 26683 26683 D OplusScrollToTopManager: setIsInWhiteList false
+02-03 07:35:12.533 26683 26683 D OplusViewDebugManager: OplusViewDebugManager Constructor android.view.debug.OplusViewDebugManager@33a31d4 [mHasViewDebugProperty true] [mHasMsgDebugProperty false] [DEBUG false] [EXTRAINFOENABLE false] [LIGHT_OS false]
+02-03 07:35:12.537 26683 26683 V Configuration: Updating configuration, locales updated from [fa,en_US] to [en_US,fa]
+02-03 07:35:12.537 26683 26683 V Resources: Updating configuration with selected locales [en-US]
+02-03 07:35:12.538 26683 26683 W libc    : Access denied finding property "ro.odm.prev.product.name"
+02-03 07:35:12.539 26683 26683 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+02-03 07:35:12.539 26683 26683 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+02-03 07:35:12.548 26463 26463 D VRI[MainActivity]: onFocusEvent false
+02-03 07:35:12.589 26463 26703 D ProfileInstaller: Installing profile for io.jojo.app.debug
+02-03 07:35:12.794 26683 26683 I Quality : Odex status:io-error-no-oat filter:run-from-apk reason:unknown location:/data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/base.apk cost:254
+02-03 07:35:12.794 26683 26683 D nativeloader: Configuring clns-9 for other apk /data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/lib/arm64:/data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/io.jojo.app.debug
+02-03 07:35:12.796 26683 26683 I p.debug:phoenix: AssetManager2(0xb400007b6d6a0a28) locale list changing from [] to [fa]
+02-03 07:35:12.798 26683 26683 V GraphicsEnvironment: Currently set values for:
+02-03 07:35:12.798 26683 26683 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+02-03 07:35:12.798 26683 26683 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+02-03 07:35:12.798 26683 26683 V GraphicsEnvironment: io.jojo.app.debug is not listed in per-application setting
+02-03 07:35:12.798 26683 26683 V GraphicsEnvironment: ANGLE allowlist from config: 
+02-03 07:35:12.798 26683 26683 V GraphicsEnvironment: io.jojo.app.debug is not listed in ANGLE allowlist or settings, returning default
+02-03 07:35:12.798 26683 26683 V GraphicsEnvironment: Updatable production driver is not supported on the device.
+02-03 07:35:12.799 26683 26683 D ResourcesManagerExtImpl: applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:-1
+02-03 07:35:12.806 26683 26683 D nativeloader: Load /data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/lib/arm64/libgojni.so using class loader ns clns-9 (caller=/data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/base.apk!classes27.dex): ok
+02-03 07:35:12.821 26463 26497 D VRI[ProxySetSettingsActivity]: dispatchAppVisibility visible:false mUpcomingWindowFocus:false
+02-03 07:35:12.821 26463 26463 D VRI[ProxySetSettingsActivity]: visibilityChanged oldVisibility=true newVisibility=false
+02-03 07:35:12.831 26463 26463 D HWUI    : RenderProxy::destroy: this=0xb400007aaa41f500, mContext=0xb4000079b7f78ec0
+02-03 07:35:12.831 26463 26527 D HWUI    : SkiaVulkanPipeline::setSurface: this=0xb400007a8127e680, surface=NULL
+02-03 07:35:12.831 26463 26527 D BufferQueueProducer: [VRI[ProxySetSettingsActivity]#3(BLAST Consumer)3](id:675f00000003,api:1,p:26463,c:26463) disconnect: api 1
+02-03 07:35:12.831 26463 26527 D HWUI    : endAllActiveAnimators on 0xb400007aaa43f000 (UnprojectedRipple) with handle 0xb400007b116252c0
+02-03 07:35:12.832 26463 26463 D ViewRootImplExtImpl: wrapConfigInfoIntoFlags rotation=0, smallestScreenWidthDp=360, residentWS=false, scenario=0, bounds=Rect(0, 0 - 1440, 3168), relayoutAsync=false, flags=0, newFlags=1660955904, title=io.jojo.app.debug/io.nekohasekai.sagernet.ui.profile.ProxySetSettingsActivity
+02-03 07:35:12.834 26463 26463 D VRI[ProxySetSettingsActivity]: relayoutWindow result, sizeChanged:false, surfaceControlChanged:true, transformHintChanged:false, mSurfaceSize:Point(1440, 3168), mLastSurfaceSize:Point(1440, 3168), mWidth:1440, mHeight:3168, requestedWidth:1440, requestedHeight:3168, transformHint:0, installOrientation:0, displayRotation:0, isSurfaceValid:false, attr.flag:-2122252032, tmpFrames:ClientWindowFrames{frame=[0,0][1440,3168] display=[0,0][1440,3168] parentFrame=[0,0][0,0]}, relayoutAsync:false, mSyncSeqId:0
+02-03 07:35:12.835 26463 26494 D BLASTBufferQueue: [VRI[ProxySetSettingsActivity]#3](f:0,a:1) destructor()
+02-03 07:35:12.835 26463 26494 D BufferQueueConsumer: [VRI[ProxySetSettingsActivity]#3(BLAST Consumer)3](id:675f00000003,api:0,p:-1,c:26463) disconnect
+02-03 07:35:12.841 26683 26714 D nativeloader: Load /data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/lib/arm64/libdatastore_shared_counter.so using class loader ns clns-9 (caller=/data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/base.apk!classes26.dex): ok
+02-03 07:35:12.863 26683 26683 V Configuration: Updating configuration, locales updated from [fa,en_US] to [en_US,fa]
+02-03 07:35:12.863 26683 26683 V Resources: Updating configuration with selected locales [en-US]
+02-03 07:35:12.864 26683 26683 I HWUI    : SupportApps size 9
+02-03 07:35:12.864 26683 26683 D ExtensionsLoader: createInstance(64bit) : createExtendedFactory
+02-03 07:35:12.864 26683 26683 D ExtensionsLoader: Opened libSchedAssistExtImpl.so
+02-03 07:35:12.865 26683 26683 E SchedAssist: open sharedFd failed with error=Permission denied
+02-03 07:35:12.865 26683 26683 E SchedAssist: open sharedFd failed with error=Permission denied
+02-03 07:35:12.865 26683 26683 E SchedAssist: open sharedFd failed with error=Permission denied
+02-03 07:35:12.865 26683 26722 D OplusGraphicsEvent: OplusGraphicsEventListener create now!
+02-03 07:35:12.865 26683 26722 D OplusGraphicsEvent: addEventListener success!
+02-03 07:35:12.865 26683 26722 D ExtensionsLoader: createInstance(64bit) : createExtendedFactory
+02-03 07:35:12.865 26683 26683 I p.debug:phoenix: AssetManager2(0xb400007b6d6a0d28) locale list changing from [] to [fa]
+02-03 07:35:12.865 26683 26722 D ExtensionsLoader: Opened libSchedAssistExtImpl.so
+02-03 07:35:12.866 26683 26722 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+02-03 07:35:12.866 26683 26683 D ResourcesManagerExtImpl: applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:0
+02-03 07:35:12.866 26683 26722 D vulkan  : searching for layers in '/data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/lib/arm64'
+02-03 07:35:12.866 26683 26722 D vulkan  : searching for layers in '/data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/base.apk!/lib/arm64-v8a'
+02-03 07:35:12.868 26683 26683 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+02-03 07:35:12.868 26683 26722 D colorx  : I can't find colorx layer , let's enumerate colorx layers first.
+02-03 07:35:12.869 26683 26683 E OplusPredictiveBackController:  NoSuchMethodException 
+02-03 07:35:12.869 26683 26683 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application com.jakewharton.processphoenix.PhoenixActivity@b4a746e hasOnBackInvokedCallBackEnabled
+02-03 07:35:12.869 26683 26683 D OplusPredictiveBackController: initPredictiveBackConfig for com.jakewharton.processphoenix.PhoenixActivity@b4a746e initPredictiveBackConfig mShouldInterceptKeyEvent false
+02-03 07:35:12.869 26683 26683 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application com.jakewharton.processphoenix.PhoenixActivity@b4a746e hasOnBackInvokedCallBackEnabled
+02-03 07:35:12.869 26683 26683 I Process : Sending signal. PID: 26463 SIG: 9
+02-03 07:35:12.871 26683 26722 I AdrenoVK-0: ===== BEGIN DUMP OF OVERRIDDEN SETTINGS =====
+02-03 07:35:12.871 26683 26722 I AdrenoVK-0: ===== END DUMP OF OVERRIDDEN SETTINGS =====
+02-03 07:35:12.873 26683 26722 D qdgralloc: Fetching IMapper5 from QtiMapper5
+02-03 07:35:12.874 26683 26683 D ActivityClient: activity finished by caller: android.app.Activity.finish:7644 android.app.Activity.finish:7661 com.jakewharton.processphoenix.PhoenixActivity.onCreate:34 android.app.Activity.performCreate:9400 android.app.Activity.performCreate:9372 android.app.Instrumentation.callActivityOnCreate:1541 android.app.ActivityThread.performLaunchActivity:4604 android.app.ActivityThread.handleLaunchActivity:4827 android.app.servertransaction.LaunchActivityItem.execute:242 android.app.servertransaction.TransactionExecutor.executeNonLifecycleItem:138 
+02-03 07:35:12.875 26683 26683 I p.debug:phoenix: System.exit called, status: 0
+02-03 07:35:12.875 26683 26683 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+02-03 07:35:12.930 26735 26735 I .jojo.app.debug: isSwordfishLaunchAppEnabled_ 1 isSwordfishInstallAppEnabled_ 1
+02-03 07:35:12.930 26735 26735 I .jojo.app.debug: Late-enabling -Xcheck:jni
+02-03 07:35:12.946 26735 26735 E .jojo.app.debug: Unknown bits set in runtime_flags: 0x40000000
+02-03 07:35:12.946 26735 26735 I .jojo.app.debug: Using CollectorTypeCMC GC.
+02-03 07:35:12.949 26735 26735 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+02-03 07:35:12.951 26735 26735 W libc    : Access denied finding property "persist.vendor.sys.activitylog"
+02-03 07:35:12.952 26735 26735 I OneTrace: Mark active for pid=26735? true
+02-03 07:35:12.952 26735 26735 D cutils-dev: otrace_set_tracing_enabled? true tag:0
+02-03 07:35:12.952 26735 26743 D cutils-dev: properties changed in otrace_seq_number_changed!
+02-03 07:35:12.962 26735 26749 D OplusActivityManager: get AMS extension: android.os.BinderProxy@cf639e6
+02-03 07:35:12.963 26735 26749 D SurfaceSyncGroup: preCreateSurfaceSyncGroupTimerThread
+02-03 07:35:12.963 26735 26735 D CompactWindowAppManager: initCompactApplicationInfo CompactMode: , NormalMode: 
+02-03 07:35:12.965 26735 26735 V Configuration: Updating configuration, locales updated from [] to [en_US]
+02-03 07:35:12.966 26735 26735 D OplusScrollToTopManager: setIsInWhiteList false
+02-03 07:35:12.966 26735 26735 D OplusViewDebugManager: OplusViewDebugManager Constructor android.view.debug.OplusViewDebugManager@33a31d4 [mHasViewDebugProperty true] [mHasMsgDebugProperty false] [DEBUG false] [EXTRAINFOENABLE false] [LIGHT_OS false]
+02-03 07:35:12.974 26735 26735 V Configuration: Updating configuration, locales updated from [fa,en_US] to [en_US,fa]
+02-03 07:35:12.974 26735 26735 V Resources: Updating configuration with selected locales [en-US]
+02-03 07:35:12.975 26735 26735 W libc    : Access denied finding property "ro.odm.prev.product.name"
+02-03 07:35:12.976 26735 26735 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+02-03 07:35:12.976 26735 26735 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+02-03 07:35:13.233 26735 26735 I Quality : Odex status:io-error-no-oat filter:run-from-apk reason:unknown location:/data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/base.apk cost:256
+02-03 07:35:13.233 26735 26735 D nativeloader: Configuring clns-9 for other apk /data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/lib/arm64:/data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/io.jojo.app.debug
+02-03 07:35:13.235 26735 26735 I .jojo.app.debug: AssetManager2(0xb400007b6d6a0a28) locale list changing from [] to [fa]
+02-03 07:35:13.238 26735 26735 V GraphicsEnvironment: Currently set values for:
+02-03 07:35:13.238 26735 26735 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+02-03 07:35:13.238 26735 26735 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+02-03 07:35:13.238 26735 26735 V GraphicsEnvironment: io.jojo.app.debug is not listed in per-application setting
+02-03 07:35:13.238 26735 26735 V GraphicsEnvironment: ANGLE allowlist from config: 
+02-03 07:35:13.238 26735 26735 V GraphicsEnvironment: io.jojo.app.debug is not listed in ANGLE allowlist or settings, returning default
+02-03 07:35:13.238 26735 26735 V GraphicsEnvironment: Updatable production driver is not supported on the device.
+02-03 07:35:13.239 26735 26735 D ResourcesManagerExtImpl: applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:-1
+02-03 07:35:13.244 26735 26735 D OplusGraphicsEvent: OplusGraphicsEventListener create now!
+02-03 07:35:13.244 26735 26735 D OplusGraphicsEvent: addEventListener success!
+02-03 07:35:13.245 26735 26735 E [UAH_CLIENT]: uahInit enter
+02-03 07:35:13.245 26735 26735 W .jojo.app.debug: AIBinder_linkToDeath is being called with a non-null cookie and no onUnlink callback set. This might not be intended. AIBinder_DeathRecipient_setOnUnlinked should be called first.
+02-03 07:35:13.245 26735 26735 I [UAH_CLIENT]: UahGetFeatureStatus enter
+02-03 07:35:13.256 26735 26735 D nativeloader: Load /data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/lib/arm64/libgojni.so using class loader ns clns-9 (caller=/data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/base.apk!classes27.dex): ok
+02-03 07:35:13.281 26735 26758 D nativeloader: Load /data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/lib/arm64/libdatastore_shared_counter.so using class loader ns clns-9 (caller=/data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/base.apk!classes26.dex): ok
+02-03 07:35:13.310 26735 26735 V Configuration: Updating configuration, locales updated from [fa,en_US] to [en_US,fa]
+02-03 07:35:13.310 26735 26735 V Resources: Updating configuration with selected locales [en-US]
+02-03 07:35:13.310 26735 26735 I HWUI    : SupportApps size 9
+02-03 07:35:13.310 26735 26735 D ExtensionsLoader: createInstance(64bit) : createExtendedFactory
+02-03 07:35:13.311 26735 26735 D ExtensionsLoader: Opened libSchedAssistExtImpl.so
+02-03 07:35:13.311 26735 26735 E SchedAssist: open sharedFd failed with error=Permission denied
+02-03 07:35:13.311 26735 26735 E SchedAssist: open sharedFd failed with error=Permission denied
+02-03 07:35:13.311 26735 26735 E SchedAssist: open sharedFd failed with error=Permission denied
+02-03 07:35:13.311 26735 26773 D ExtensionsLoader: createInstance(64bit) : createExtendedFactory
+02-03 07:35:13.311 26735 26773 D ExtensionsLoader: Opened libSchedAssistExtImpl.so
+02-03 07:35:13.311 26735 26773 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+02-03 07:35:13.312 26735 26735 I .jojo.app.debug: AssetManager2(0xb400007b6d6a0d28) locale list changing from [] to [fa]
+02-03 07:35:13.312 26735 26773 D vulkan  : searching for layers in '/data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/lib/arm64'
+02-03 07:35:13.312 26735 26735 D ResourcesManagerExtImpl: applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:0
+02-03 07:35:13.312 26735 26773 D vulkan  : searching for layers in '/data/app/~~e-78dhnXHIUuJz6k7uvkEg==/io.jojo.app.debug-ObyA1ZANtcLEvHxzAujUcQ==/base.apk!/lib/arm64-v8a'
+02-03 07:35:13.314 26735 26773 D colorx  : I can't find colorx layer , let's enumerate colorx layers first.
+02-03 07:35:13.317 26735 26773 I AdrenoVK-0: ===== BEGIN DUMP OF OVERRIDDEN SETTINGS =====
+02-03 07:35:13.317 26735 26773 I AdrenoVK-0: ===== END DUMP OF OVERRIDDEN SETTINGS =====
+02-03 07:35:13.319 26735 26773 D qdgralloc: Fetching IMapper5 from QtiMapper5
+02-03 07:35:13.321 26735 26735 I .jojo.app.debug: AssetManager2(0xb400007b6d7d3028) locale list changing from [] to [fa]
+02-03 07:35:13.322 26735 26735 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+02-03 07:35:13.323 26735 26773 I SnapAlloc: Graphics lib is available
+02-03 07:35:13.325 26735 26758 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemjob.SystemJobService
+02-03 07:35:13.325 26735 26758 D WM-Schedulers: Created SystemJobScheduler and enabled SystemJobService
+02-03 07:35:13.327 26735 26773 I Adreno-UNKNOWN: Using previously loaded IMapper library.
+02-03 07:35:13.327 26735 26776 D WM-ForceStopRunnable: Is default app process = true
+02-03 07:35:13.327 26735 26776 D WM-ForceStopRunnable: Performing cleanup operations.
+02-03 07:35:13.329 26735 26773 I AdrenoVK-0: QUALCOMM build          : d9238bf8f8, I1da920a053
+02-03 07:35:13.329 26735 26773 I AdrenoVK-0: Build Date              : 11/14/25
+02-03 07:35:13.329 26735 26773 I AdrenoVK-0: Shader Compiler Version : E031.47.18.44
+02-03 07:35:13.329 26735 26773 I AdrenoVK-0: Local Branch            : 
+02-03 07:35:13.329 26735 26773 I AdrenoVK-0: Remote Branch           : refs/tags/AU_LINUX_ANDROID_LA.VENDOR.15.4.0.11.00.00.1088.811
+02-03 07:35:13.329 26735 26773 I AdrenoVK-0: Remote Branch           : NONE
+02-03 07:35:13.329 26735 26773 I AdrenoVK-0: Reconstruct Branch      : NOTHING
+02-03 07:35:13.329 26735 26773 I AdrenoVK-0: Build Config            : S P 18.0.0 AArch64
+02-03 07:35:13.329 26735 26773 I AdrenoVK-0: Driver Path             : /vendor/lib64/hw/vulkan.adreno.so
+02-03 07:35:13.329 26735 26773 I AdrenoVK-0: Driver Version          : 0800.63
+02-03 07:35:13.329 26735 26773 I AdrenoVK-0: PFP                     : 0x01500077
+02-03 07:35:13.329 26735 26773 I AdrenoVK-0: ME                      : 0x01500014
+02-03 07:35:13.329 26735 26773 I AdrenoVK-0: Application Name    : android framework
+02-03 07:35:13.329 26735 26773 I AdrenoVK-0: Process Name        : io.jojo.app.debug
+02-03 07:35:13.329 26735 26773 I AdrenoVK-0: Application Version : 0x00000000
+02-03 07:35:13.329 26735 26773 I AdrenoVK-0: Engine Name         : android framework
+02-03 07:35:13.329 26735 26773 I AdrenoVK-0: Engine Version      : 0x00000000
+02-03 07:35:13.329 26735 26773 I AdrenoVK-0: Api Version         : 0x00401000
+02-03 07:35:13.329 26735 26758 D WM-RemoteWorkManagerCli: Creating a new session
+02-03 07:35:13.330 26735 26735 E OplusPredictiveBackController:  NoSuchMethodException 
+02-03 07:35:13.330 26735 26735 E OplusPredictiveBackController:  NoSuchMethodException 
+02-03 07:35:13.330 26735 26735 E OplusPredictiveBackController:  NoSuchMethodException 
+02-03 07:35:13.330 26735 26735 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application io.nekohasekai.sagernet.ui.BlankActivity@fe708c4 hasOnBackInvokedCallBackEnabled
+02-03 07:35:13.330 26735 26735 D OplusPredictiveBackController: initPredictiveBackConfig for io.nekohasekai.sagernet.ui.BlankActivity@fe708c4 initPredictiveBackConfig mShouldInterceptKeyEvent false
+02-03 07:35:13.330 26735 26735 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application io.nekohasekai.sagernet.ui.BlankActivity@fe708c4 hasOnBackInvokedCallBackEnabled
+02-03 07:35:13.331 26735 26773 D ExtensionsLoader: createInstance(64bit) : createExtendedFactory
+02-03 07:35:13.331 26735 26773 D ExtensionsLoader: Opened libeglextimpl.so
+02-03 07:35:13.331 26735 26773 D PreCache: [IPreCacheRus]loadRUSConfigs#102 failed to transact: -22 prc:io.jojo.app.debug
+02-03 07:35:13.346 26735 26782 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemalarm.RescheduleReceiver
+
+

@@ -87,7 +87,11 @@ object DataStore {
         val groups = runBlocking {
             SagerDatabase.groupDao.allGroups().first()
         }
-        return groups.find { it.type == GroupType.BASIC }!!.id
+        val basicGroup = groups.find { it.type == GroupType.BASIC }
+        if (basicGroup != null) return basicGroup.id
+        
+        // If no BASIC group exists, ensure default group and return its ID
+        return ProfileManager.ensureDefaultGroupId()
     }
 
     var acceptedLicense by configurationStore.boolean(Key.ACCEPTED_LICENSE)

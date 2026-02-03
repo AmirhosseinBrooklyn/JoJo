@@ -7,11 +7,11 @@ import android.content.Intent
 import android.os.PowerManager
 import androidx.core.content.ContextCompat
 import io.nekohasekai.sagernet.repository.repo
+import io.nekohasekai.sagernet.utils.LocaleHelper
 
 class ProxyService : Service(), BaseService.Interface {
     override fun attachBaseContext(newBase: Context) {
-        val languageContext = ContextCompat.getContextForLanguage(newBase)
-        super.attachBaseContext(languageContext)
+        super.attachBaseContext(LocaleHelper.attachBaseContext(newBase))
     }
 
     override val data = BaseService.Data(this)
